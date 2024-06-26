@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('../assets/HeaderFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .header {
+    font-family: 'HeaderFont', sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #202632;
+    background-color: transparent;
+    gap: 150px;
+  }
+  
+  .header-image {
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 150px; 
+    height: 50px; 
+    object-fit: cover;
+  }
