@@ -3,6 +3,10 @@ import Image from 'next/image';
 import image from '../assets/img_7.png';
 
 const CardImg = () => {
+    // const bgClass = classNames({
+    //     [`bg-${bcolor}`]: bcolor,
+    //     [`bg-${fcolor}`]: fcolor,
+    // });
 
     return (
         <div className="relative w-[200px] h-[200px]">
