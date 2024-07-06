@@ -1,6 +1,7 @@
 import Header from "./HeaderFooter/components/Header";
 import CardImg from "./HeaderFooter/components/card-img";
 import CardText from "./HeaderFooter/components/card-text";
+import Vector from '/Users/kavitathomas/Documents/qwic_dev/qwic/app/HeaderFooter/assets/Vector.png'; //replace this, works for testing purposes
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           fcolor="light-pink" 
           title="Title" 
           body="Fostering community for all women, underrepresented minorities, and anyone passionate about technology."
+          img={Vector}
         />
         <CardImg/>
       </main>
