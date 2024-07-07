@@ -14,8 +14,9 @@ export default function Home() {
           bcolor="dark-pink" 
           fcolor="light-pink" 
           title="Title" 
-          body="Fostering community for all women, underrepresented minorities, and anyone passionate about technology."
+          body="A space for all women, underrepresented minorities, and anyone passionate about technology."
           img={Vector}
+          more="Learn more"
         />
         <CardImg
           bcolor="dark-blue"
