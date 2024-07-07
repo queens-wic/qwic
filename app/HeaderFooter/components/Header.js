@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import logo from '../assets/logo_1.png';
+import React from "react";
+import Image from "next/image";
+import logo from "../assets/logo_1.png";
 
 const Header = () => {
   return (
@@ -11,7 +11,9 @@ const Header = () => {
       <div className="relative top-[74px] flex gap-[120px] items-center">
         <div className="font-HeaderFont text-[15px]">Who Are We</div>
         <div className="font-HeaderFont text-[15px]">Events</div>
-        <div className="font-HeaderFont text-[15px]">Resources For Students</div>
+        <div className="font-HeaderFont text-[15px]">
+          Resources For Students
+        </div>
         <div className="font-HeaderFont text-[15px]">Partnerships</div>
         <div className="font-HeaderFont text-[15px]">Our Team</div>
       </div>
@@ -20,6 +22,6 @@ const Header = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

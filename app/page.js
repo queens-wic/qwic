@@ -1,12 +1,18 @@
 import Header from "./HeaderFooter/components/Header";
-import Hero from "@/components/landing-page/Hero";
+import Hero from "@/components/landing-page/Hero"; // eventually I (kale) will add an index.js to clean up these imports
+import WhoAreWe from "@/components/landing-page/WhoAreWe";
+import OurTeam from "@/components/landing-page/OurTeam";
+import Hackathon from "@/components/landing-page/Hackathon";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="bg-[#F5F5F5]">
+      {/* <Header /> */}
+      <main>
         <Hero />
+        <WhoAreWe />
+        <OurTeam />
+        <Hackathon />
       </main>
     </div>
   );
