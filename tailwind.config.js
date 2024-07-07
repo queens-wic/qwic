@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'HeaderFont': ['HeaderFont', 'sans-serif']
+        HeaderFont: ["HeaderFont", "sans-serif"],
       },
       colors: {
-        'header-color': '#202632',
+        "header-color": "#202632",
+        "qwic-pink": "#F5DBF1",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
