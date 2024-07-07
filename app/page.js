@@ -13,14 +13,14 @@ export default function Home() {
         <CardText 
           bcolor="dark-pink" 
           fcolor="light-pink" 
-          title="Title" 
+          title="Community" 
           body="A space for all women, underrepresented minorities, and anyone passionate about technology."
           img={Vector}
           more="Learn more"
         />
         <CardImg
-          bcolor="dark-blue"
-          fcolor="light-blue"
+          bcolor="dark-pink"
+          fcolor="light-pink"
           img={pic}
         />
       </main>
