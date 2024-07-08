@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'HeaderFont';
-    src: url('./HeaderFooter/assets/HeaderFont.ttf') format('truetype');
+    src: url('../assets/HeaderFont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
