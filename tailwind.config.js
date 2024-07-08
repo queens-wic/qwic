@@ -22,6 +22,8 @@ module.exports = {
         'light-blue': '#DFE8F5',
         'dark-purple': '#ADA8E5',
         'light-purple': '#DDDBF5',
+        'pale-pink': '#FAEDF8', // for mentorship shadow card
+        'alt-purple':'#CC68BC', // for mentorship shadow card
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
