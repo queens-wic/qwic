@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t from-purple-200 via-purple-300 to-purple-400 bg-opacity-20">
+    <footer className="bg-gradient-to-b from-[#DDDBF5]/50 to-[#E0A4D7]/40">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
