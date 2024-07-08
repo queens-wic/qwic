@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "./HeaderFooter/components/Header";
 import CardImg from "./HeaderFooter/components/card-img";
-import CardText from "./HeaderFooter/components/card-text";
+import CardText from "./HeaderFooter/components/card-text-alt";
 import CardShadow from "./HeaderFooter/components/card-shadow";
 import Testimonial from './HeaderFooter/components/card-testimonial';
 import Icon from '/Users/kavitathomas/Documents/qwic_dev/qwic/app/HeaderFooter/assets/Vector.png'; //replace this, works for testing purposes
