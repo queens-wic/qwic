@@ -7,13 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '1': '1px',
+        '0.5': '0.5px',
+      },
       fontFamily: {
         HeaderFont: ["HeaderFont", "sans-serif"],
       },
       colors: {
         "header-color": "#202632",
         "qwic-pink": "#F5DBF1",
-        "light-grey": "#ADB0B7"
+        "light-grey": "#ADB0B7",
+        'dark-pink':'#E0A4D7',
+        'light-pink': '#F5DBF1',
+        'dark-blue': '#9FB9DE',
+        'light-blue': '#DFE8F5',
+        'dark-purple': '#ADA8E5',
+        'light-purple': '#DDDBF5',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
