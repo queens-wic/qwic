@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../assets/logo_1.png';
+import logo from '../public/assets/logo_1.png';
 
 const Header = () => {
   return (
@@ -23,3 +23,4 @@ const Header = () => {
 }
 
 export default Header;
+
