@@ -3,6 +3,7 @@ import Hero from "@/components/landing-page/Hero"; // eventually I (kale) will a
 import WhoAreWe from "@/components/landing-page/WhoAreWe";
 import OurTeam from "@/components/landing-page/OurTeam";
 import Hackathon from "@/components/landing-page/Hackathon";
+import SupportUs from "@/components/landing-page/SupportUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <WhoAreWe />
         <OurTeam />
         <Hackathon />
+        <SupportUs />
       </main>
     </div>
   );

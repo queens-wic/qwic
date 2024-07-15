@@ -1,5 +1,5 @@
 import React from "react";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 import Header from "@/app/HeaderFooter/components/Header";
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
             animationDuration={2000}
             type="highlight"
             show={true}
-            color="#9FB9DE"
+            color="#93B6E8"
             strokeWidth={2.5}
           >
             technology
