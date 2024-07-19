@@ -14,9 +14,9 @@ const SupportUs = () => {
           partnership opportunities.
         </p>
       </div>
-      <div class="border-t border-light-grey mb-2"></div>
+      <div className="border-t border-light-grey mb-2"></div>
       <SponserScroll />
-      <div class="border-t border-light-grey mt-2"></div>
+      <div className="border-t border-light-grey mt-2"></div>
     </div>
   );
 };
