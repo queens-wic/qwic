@@ -8,14 +8,14 @@ const Header = () => {
       <div>
         <Image src={logo} alt="Logo" className="object-contain w-full h-full" />
       </div>
-      <div className="flex flex-row gap-16 text-[15px]">
+      <div className="flex flex-row gap-16 text-[15px] font-bold">
         <div>Who Are We</div>
         <div>Events</div>
         <div>Resources For Students</div>
         <div>Partnerships</div>
         <div>Our Team</div>
       </div>
-      <div className="text-[15px]">Contact Us</div>
+      <div className="text-[15px] font-bold">Contact Us</div>
     </div>
   );
 };
