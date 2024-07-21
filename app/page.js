@@ -5,7 +5,7 @@ import WhoAreWe from "@/components/landing-page/WhoAreWe";
 import OurTeam from "@/components/landing-page/OurTeam";
 import Hackathon from "@/components/landing-page/Hackathon";
 import SupportUs from "@/components/landing-page/SupportUs";
-
+import LandAck from "@/components/landing-page/LandAck";
 export default function Home() {
   return (
     <div className="bg-[#F5F5F5]">
@@ -15,6 +15,7 @@ export default function Home() {
         <OurTeam />
         <Hackathon />
         <SupportUs />
+        <LandAck />
       </main>
     </div>
   );
