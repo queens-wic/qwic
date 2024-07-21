@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         "header-color": "#202632",
+        "secondary-text": "#384350",
         "qwic-pink": "#F5DBF1",
         "light-grey": "#ADB0B7",
         "dark-pink": "#E0A4D7",
