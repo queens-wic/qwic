@@ -32,7 +32,7 @@ const Hero = () => {
             empowered
           </RoughNotation>
         </h1>
-        <p className="text-lg mt-5">
+        <p className="text-lg mt-12 text-secondary-text">
           Fostering community for all women, underrepresented minorities, and
           anyone passionate about technology.
         </p>

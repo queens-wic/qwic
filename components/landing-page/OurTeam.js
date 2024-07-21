@@ -4,15 +4,15 @@ import Image from "next/image";
 const OurTeam = () => {
   return (
     <div className="h-screen mx-36 flex flex-col justify-center">
-      <h1 className="text-[56px] font-semibold">
+      <h1 className="text-[40px] font-bold">
         Creating Connections and Learning Together
       </h1>
-      <p className="text-[18px] mt-2">
+      <p className="text-[18px] mt-4 text-secondary-text">
         QWIC is a community for all women, underrepresented minorities, and
         anyone who is <br /> passionate about technology and share the same
         values of equality.
       </p>
-      <div className="self-center">
+      <div className="self-center p-4">
         <Image
           src="/OurTeamImage.png"
           width={850}
