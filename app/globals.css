@@ -1,10 +1,17 @@
 @tailwind base;
+
+@layer base {
+  html {
+    @apply text-[#202632];
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
     font-family: 'HeaderFont';
-    src: url('../public/assets/HeaderFont.ttf') format('truetype');
+    src: url('./HeaderFooter/assets/HeaderFont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }

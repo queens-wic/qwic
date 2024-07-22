@@ -1,13 +1,27 @@
-import Header from "../components/Header";
-import Footer from '../components/Footer';
-
+import React from "react";
+// import Header from "./HeaderFooter/components/Header";
+import Hero from "@/components/landing-page/Hero"; // eventually I (kale) will add an index.js to clean up these imports
+import WhoAreWe from "@/components/landing-page/WhoAreWe";
+import OurTeam from "@/components/landing-page/OurTeam";
+import Hackathon from "@/components/landing-page/Hackathon";
+import SupportUs from "@/components/landing-page/SupportUs";
+import CardImg from "./HeaderFooter/components/card-img";
+import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+// import CardText from "./HeaderFooter/components/card-text";
+// import Icon from '/Users/kavitathomas/Documents/qwic_dev/qwic/app/HeaderFooter/assets/Vector.png'; //replace this, works for testing purposes
+// import pic from '/Users/kavitathomas/Documents/qwic_dev/qwic/app/HeaderFooter/assets/img_7.png';
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1>QWIC Website</h1>
+    <div className="bg-[#F5F5F5]">
+      <main>
+        <Header />
+        <Hero />
+        <WhoAreWe />
+        <OurTeam />
+        <Hackathon />
+        <SupportUs />
       </main>
       <Footer />
     </div>
