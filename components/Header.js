@@ -1,25 +1,62 @@
-import React from 'react';
-import Image from 'next/image';
-import logo from '../public/assets/logo_1.png';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
-    return (
-        <div className="flex justify-between font-bold text-[#202632] bg-transparent p-20">
-            <div className="w-[122px] h-[37px] items-center">
-                <Image src={logo} alt="Logo" className="object-contain w-full h-full" />
-            </div>
-            <div className="flex gap-20 items-center">
-                <div className="font-HeaderFont text-[15px]">Who Are We</div>
-                <div className="font-HeaderFont text-[15px]">Events</div>
-                <div className="font-HeaderFont text-[15px]">Resources For Students</div>
-                <div className="font-HeaderFont text-[15px]">Partnerships</div>
-                <div className="font-HeaderFont text-[15px]">Our Team</div>
-            </div>
-            <div className="flex items-center">
-                <div className="font-HeaderFont text-[15px]">Contact Us</div>
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className="flex flex-row justify-between my-5 px-5">
+      <div>
+        <Image
+          src={`/assets/logo_1.png`}
+          alt="QWIC Logo"
+          className="object-contain w-full h-full"
+          width="500"
+          height="200"
+        />
+      </div>
+      <div>
+        <ul className="flex flex-row gap-16 text-[15px] font-bold">
+          <li>
+            {/* Temporarily blue but colour needs to be changed */}
+            <Link href="/who-we-are" className="hover:text-dark-blue">
+              Who Are We
+            </Link>
+          </li>
+          <li>
+            <Link href="/events" className="hover:text-dark-blue">
+              Events
+            </Link>
+          </li>
+          <li>
+            <Link href="/resources" className="hover:text-dark-blue">
+              Resources For Students
+            </Link>
+          </li>
+          <li>
+            <Link href="/mentorship" className="hover:text-dark-blue">
+              Mentorship
+            </Link>
+          </li>
+          <li>
+            <Link href="/partnerships" className="hover:text-dark-blue">
+              Partnerships
+            </Link>
+          </li>
+          <li>
+            <Link href="/our-team" className="hover:text-dark-blue">
+              Our Team
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <Link
+        href="/contact"
+        className="hover:text-dark-blue text-[15px] font-bold"
+      >
+        Contact Us
+      </Link>
+    </div>
+  );
+};
 
 export default Header;

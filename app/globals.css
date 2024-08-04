@@ -8,10 +8,3 @@
 
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'HeaderFont';
-  src: url('./HeaderFooter/assets/HeaderFont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
