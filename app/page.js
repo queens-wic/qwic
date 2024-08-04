@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <div className="bg-[#F5F5F5]">
       <main>
+        <Header />
         <Hero />
         <WhoAreWe />
         <OurTeam />
@@ -20,6 +21,7 @@ export default function Home() {
         <SupportUs />
         <LandAck />
       </main>
+      <Footer />
     </div>
   );
 }
