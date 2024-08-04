@@ -7,7 +7,7 @@ const SupportUs = () => {
     <div className="h-screen flex flex-col justify-center">
       <div className="mx-36 flex flex-row justify-between mb-10">
         <div className="flex flex-col w-4/6 mr-4">
-          <h1 className="text-[40px] font-bold">Want to help support us?</h1>
+          <h1 className="text-[36px] font-bold">Want to help support us?</h1>
           <p className="text-[18px] mt-2 text-secondary-text">
             We would love to partner with you to promote your local Kingston
             business, offer students exciting prizes and build the relationship

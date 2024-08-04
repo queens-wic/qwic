@@ -4,7 +4,7 @@ import Image from "next/image";
 const OurTeam = () => {
   return (
     <div className="h-screen mx-36 flex flex-col justify-center">
-      <h1 className="text-[40px] font-bold">
+      <h1 className="text-[36px] font-bold">
         Creating Connections and Learning Together
       </h1>
       <p className="text-[18px] mt-4 text-secondary-text">
