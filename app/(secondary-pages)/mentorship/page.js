@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       {/* Heading */}
       <div className="bg-[url('/mentorship/blobs.png')] bg-cover bg-center h-[300px] flex justify-center items-center">
         <div className="mx-36">
-          <h1 className="text-[40px] font-bold">
+          <h1 className="text-[36px] font-bold">
             Bits and Bytes Mentorship Program
           </h1>
           <p className="text-secondary-text text-[18px] mt-4">
