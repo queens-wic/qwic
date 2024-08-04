@@ -1,5 +1,6 @@
 import React from "react";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Hero,
   WhoAreWe,
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <div className="bg-[#F5F5F5]">
       <main>
-        <Header />
+        {/* <Header /> */}
         <Hero />
         <WhoAreWe />
         <OurTeam />

@@ -1,6 +1,6 @@
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
-import Header from "@/app/HeaderFooter/components/Header";
+import Header from "../Header";
 
 const Hero = () => {
   return (
@@ -10,11 +10,11 @@ const Hero = () => {
       </div>
       <div className="absolute inset-0 inverted-radius bg-gradient-to-b from-[#DDDBF5]/50 to-[#E0A4D7]/40 z-0"></div>
       <div className="flex-grow flex flex-col justify-center items-center z-10 px-36">
-        <h1 className="text-7xl font-semibold">Helping you discover</h1>
-        <h1 className="text-7xl font-semibold mt-6">
+        <h1 className="text-6xl font-semibold">Helping you discover</h1>
+        <h1 className="text-6xl font-semibold mt-6">
           <RoughNotation
             animationDuration={2000}
-            type="highlight"
+            type="box"
             show={true}
             color="#93B6E8"
             strokeWidth={2.5}
