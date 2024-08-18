@@ -13,19 +13,19 @@ const FilterBar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" className="relative inline-block px-4 py-2 hover: group">
+                        <Link href="/resources/high-school-students" className="relative inline-block px-4 py-2 hover: group">
                             <span className="relative z-10">High School Students</span>
                             <span className="absolute inset-0 rounded-full border-1 border-transparent group-hover:border-black group-active:border-black group-focus:border-black transition-all duration-300 ease-in-out"></span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" className="relative inline-block px-4 py-2 hover: group">
+                        <Link href="/resources/incoming-students" className="relative inline-block px-4 py-2 hover: group">
                             <span className="relative z-10">Incoming Students</span>
                             <span className="absolute inset-0 rounded-full border-1 border-transparent group-hover:border-black group-active:border-black group-focus:border-black transition-all duration-300 ease-in-out"></span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" className="relative inline-block px-4 py-2 hover: group">
+                        <Link href="/resources/computing-at-queens" className="relative inline-block px-4 py-2 hover: group">
                             <span className="relative z-10">Computing at Queen's</span>
                             <span className="absolute inset-0 rounded-full border-1 border-transparent group-hover:border-black group-active:border-black group-focus:border-black transition-all duration-300 ease-in-out"></span>
                         </Link>
