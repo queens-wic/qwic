@@ -17,10 +17,10 @@ const CardTextBlue = ({ title, body, img, more }) => (
         <h2 className="m-6 mb-2 text-[24px] font-semibold">{title}</h2>
         <p className="m-6 mt-2 text-[18px] text-secondary-text">{body}</p>
       </div>
-      <div className="flex justify-between items-center absolute bottom-0 left-0 w-full px-6 py-6">
+      <div className="flex justify-between items-center absolute bottom-0 left-0 w-full px-6 py-6 transition ease-in-out delay-100 hover:translate-x-2">
         <span className="text-[20px] font-semi-bold">{more}</span>
         <Image
-          src={`/assets/arrow.png`}
+          src={`/assets/arrow.svg`}
           alt="Learn More"
           width={25}
           height={25}
