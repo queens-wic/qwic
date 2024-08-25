@@ -15,7 +15,7 @@ const SupportUs = () => {
             contacts are below, and we would love to <br /> speak with you about
             partnership opportunities.
           </p>
-          <button className="bg-qwic-pink rounded-full border border-black py-2 px-4 font-semibold mt-4 w-fit">
+          <button className="bg-qwic-pink transition ease-in-out delay-100 hover:translate-x-1 hover:bg-light-purple rounded-full border border-black py-2 px-4 font-semibold w-fit mt-4">
             Become a sponsor
           </button>
         </div>

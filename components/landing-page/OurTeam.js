@@ -14,14 +14,14 @@ const OurTeam = () => {
       </p>
       <div className="self-center p-4">
         <Image
-          src="/OurTeamImage.png"
-          width={850}
-          height={850}
+          src="/landing-page/OurTeamImage.png"
+          width={1000}
+          height={900}
           alt="Collage of QWIC team pictures"
         />
       </div>
       <div className="flex justify-end">
-        <button className="bg-qwic-pink rounded-full border border-black py-2 px-4 font-semibold">
+        <button className="bg-qwic-pink transition ease-in-out delay-100 hover:translate-x-1 hover:bg-light-purple rounded-full border border-black py-2 px-4 font-semibold">
           Meet Our Team
         </button>
       </div>

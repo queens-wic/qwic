@@ -11,7 +11,7 @@ const Hackathon = () => {
           their abilities.
         </p>
         <div className="flex justify-end">
-          <button className="bg-qwic-pink rounded-full border border-black py-2 px-4 font-semibold">
+          <button className="bg-qwic-pink transition ease-in-out delay-100 hover:translate-x-1 hover:bg-light-purple rounded-full border border-black py-2 px-4 font-semibold">
             Learn More
           </button>
         </div>
