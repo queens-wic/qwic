@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex flex-row justify-between my-5 px-5">
+    <div className="flex flex-row justify-between my-10 px-5">
       <div>
         <Image
           src={`/assets/logo_1.png`}
@@ -12,38 +12,39 @@ const Header = () => {
           className="object-contain w-full h-full"
           width="500"
           height="200"
+          href="/"
         />
       </div>
       <div>
         <ul className="flex flex-row gap-16 text-[15px] font-bold">
           <li>
             {/* Temporarily blue but colour needs to be changed */}
-            <Link href="/who-we-are" className="hover:text-dark-blue">
+            <Link href="/who-we-are" className="hover:text-dark-purple">
               Who Are We
             </Link>
           </li>
           <li>
-            <Link href="/events" className="hover:text-dark-blue">
+            <Link href="/events" className="hover:text-dark-purple">
               Events
             </Link>
           </li>
           <li>
-            <Link href="/resources" className="hover:text-dark-blue">
+            <Link href="/resources" className="hover:text-dark-purple">
               Resources For Students
             </Link>
           </li>
           <li>
-            <Link href="/mentorship" className="hover:text-dark-blue">
+            <Link href="/mentorship" className="hover:text-dark-purple">
               Mentorship
             </Link>
           </li>
           <li>
-            <Link href="/partnerships" className="hover:text-dark-blue">
+            <Link href="/partnerships" className="hover:text-dark-purple">
               Partnerships
             </Link>
           </li>
           <li>
-            <Link href="/our-team" className="hover:text-dark-blue">
+            <Link href="/our-team" className="hover:text-dark-purple">
               Our Team
             </Link>
           </li>
