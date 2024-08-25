@@ -12,10 +12,10 @@ module.exports = {
         0.5: "0.5px",
       },
       fontFamily: {
-        HeaderFont: ["HeaderFont", "sans-serif"],
+        NavbarFont: ["NavbarFont", "sans-serif"],
       },
       colors: {
-        "header-color": "#202632",
+        "Navbar-color": "#202632",
         "secondary-text": "#384350",
         "qwic-pink": "#F5DBF1",
         "light-grey": "#ADB0B7",
@@ -25,8 +25,8 @@ module.exports = {
         "light-blue": "#DFE8F5",
         "dark-purple": "#ADA8E5",
         "light-purple": "#DDDBF5",
-        'pale-pink': '#FAEDF8', // for mentorship shadow card
-        'alt-purple':'#CC68BC', // for mentorship shadow card
+        "pale-pink": "#FAEDF8", // for mentorship shadow card
+        "alt-purple": "#CC68BC", // for mentorship shadow card
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
