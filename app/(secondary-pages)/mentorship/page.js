@@ -23,7 +23,7 @@ const page = () => {
         <div>
           <h2 className="text-[30px] font-bold">What's in it for you?</h2>
           <div className="flex flex-row justify-between mt-8 ">
-            <div>
+            <div className="flex-1 px-4">
               <div className="flex justify-center">
                 <Image
                   src="/mentorship/personalGrowth.png"
@@ -35,28 +35,29 @@ const page = () => {
               </div>
               <h3 className="text-[26px] font-bold mt-4">Foster Connections</h3>
               <p className="text-[18px] mt-4 text-secondary-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam,
+                Create and strengthen meaningful connections within a supportive
+                community. Build relationships with peers who share similar
+                interests and experiences, enriching your university life and
+                professional network.
               </p>
             </div>
-            <div>
+            <div className="flex-1 px-4">
               <div className="flex justify-center">
                 <Image
                   src="/mentorship/networking.png"
-                  width={200}
-                  height={200}
+                  width={220}
+                  height={220}
                   alt="Digital illustration of a two people smiling at eachother and giving thumbs up."
                 />
               </div>
               <h3 className="text-[26px] font-bold mt-4">Personal Growth</h3>
               <p className="text-[18px] mt-4 text-secondary-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam,
+                Grow through meaningful interactions. Mentors enhance leadership
+                skills, while mentees gain confidence and insights for their
+                journey.
               </p>
             </div>
-            <div>
+            <div className="flex-1 px-4">
               <div className="flex justify-center">
                 <Image
                   src="/mentorship/careerEnhan.png"
@@ -65,11 +66,13 @@ const page = () => {
                   alt="Digital illustration of a girl in a wheel chair sitting at her desk working at the computer."
                 />
               </div>
-              <h3 className="text-[26px] font-bold mt-4">Coffee Chats</h3>
+              <h3 className="text-[26px] font-bold mt-4">Guidance & Support</h3>
               <p className="text-[18px] mt-4 text-secondary-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam,
+                Receive and provide valuable guidance tailored to your unique
+                needs and goals. From advice on course selection or sharing
+                career insights, both mentors and mentees will find support and
+                encouragement to navigate their university experience
+                effectively.
               </p>
             </div>
           </div>
@@ -91,38 +94,38 @@ const page = () => {
         </div>
         <div className="mx-auto mt-10">
           <div className="grid grid-cols-12 grid-rows-2 gap-4">
-            <div className="p-6 bg-white rounded-2xl col-start-2 col-span-4 flex flex-col justify-center gap-4">
+            <div className="p-6 bg-white rounded-2xl col-start-2 col-span-4 h-auto flex flex-col justify-center px-6">
               <p className="text-secondary-text text-[18px]">
                 I was able to connect with a peer mentor who helped me select my
                 classes and made my first year a lot less stressful.
               </p>
-              <div>
+              <div className="pt-4">
                 <h3 className="text-[24px] font-semibold">Jane Smith</h3>
                 <p className="text-secondary-text text-[18px]">
                   1st Year Bio Comp Student
                 </p>
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl col-span-6 mt-12 ml-20 flex flex-col justify-center gap-4">
+            <div className="p-6 bg-white rounded-2xl col-span-6 h-auto ml-20 flex flex-col justify-center mt-10">
               <p className="text-secondary-text text-[18px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
               </p>
-              <div>
+              <div className="pt-4">
                 <h3 className="text-[24px] font-semibold">Jane Smith</h3>
                 <p className="text-secondary-text text-[18px]">
                   1st Year Bio Comp Student
                 </p>
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl col-start-4 col-span-6 mt-10 flex flex-col justify-center gap-4">
+            <div className="p-6 bg-white rounded-2xl col-start-4 col-span-6 h-auto flex flex-col justify-center mt-10">
               <p className="text-secondary-text text-[18px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
               </p>
-              <div>
+              <div className="pt-4">
                 <h3 className="text-[24px] font-semibold">Jane Smith</h3>
                 <p className="text-secondary-text text-[18px]">
                   1st Year Bio Comp Student
@@ -143,13 +146,11 @@ const page = () => {
                 Apply to be a mentee
               </h3>
               <p className="text-secondary-text text-[18px] py-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
+                Gain valuable guidance and support from experienced peers.
+                Connect with a mentor who can help you navigate your academic
+                and personal journey.
               </p>
-              <button className="bg-qwic-pink rounded-full border border-black py-2 px-4 font-semibold">
+              <button className="bg-qwic-pink transition ease-in-out delay-100 hover:translate-x-1 hover:bg-light-purple rounded-full border border-black py-2 px-4 font-semibold">
                 Become a Mentee
               </button>
             </div>
@@ -158,13 +159,11 @@ const page = () => {
                 Apply to be a mentor
               </h3>
               <p className="text-secondary-text text-[18px] py-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
+                Make a positive impact by supporting fellow students. Share your
+                knowledge and experiences while developing your own leadership
+                skills.
               </p>
-              <button className="bg-qwic-pink rounded-full border border-black py-2 px-4 font-semibold">
+              <button className="bg-qwic-pink transition ease-in-out delay-100 hover:translate-x-1 hover:bg-light-purple rounded-full border border-black py-2 px-4 font-semibold">
                 Become a Mentor
               </button>
             </div>
