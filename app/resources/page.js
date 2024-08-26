@@ -7,6 +7,8 @@ import FilterBar from './FilterBar'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
+  // temporary hard coded data
+  // array with each resource is an object with an id and component
 const resources = [
   {
     id: 'high-school-students',

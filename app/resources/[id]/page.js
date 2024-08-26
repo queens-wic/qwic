@@ -11,7 +11,7 @@ const ResourceFilterPage = () => {
   const [id, setId] = useState(null);
 
   useEffect(() => {
-    if (router && router.query && router.query.id) {
+    if (router && router.query && router.query.id) { // checks if all are defined
       setId(router.query.id);
     }
   }, [router]);  // Observe `router` as a whole
@@ -21,7 +21,8 @@ const ResourceFilterPage = () => {
     return <div>Loading...</div>; // Display loading state while id is undefined
   }
 
-  const resources = [
+  // array with each resource is an object with an id and component
+  const resources = [ 
     {
       id: 'high-school-students',
       component: (
