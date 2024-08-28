@@ -6,7 +6,7 @@ const EventBox = ({card, date, name, info}) =>
         <div className="flex flex-col items-start">
             <p className="mb-6">{date}</p>
             <div className="mb-24">{card}</div>
-            <h1 className="font-semibold mb-4">{name}</h1>
+            <h1 className="font-bold mb-4">{name}</h1>
             <p>{info}</p>
         </div>
     );

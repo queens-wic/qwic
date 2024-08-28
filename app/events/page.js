@@ -5,8 +5,12 @@ import CardImgBlue from "@/components/cards/card-img-blue";
 import CardImgPink from "@/components/cards/card-img-pink";
 import CardImgPurple from "@/components/cards/card-img-purple";
 import EventBox from "./event-box";
-import Image from "next/image";
-import img from "@/public/assets/img_7.png";
+import gitpub from "@/public/assets/gitpub.jpg";
+import hackher from "@/public/assets/hackher.jpg";
+import spinco_feb from "@/public/assets/spinco_feb.jpg";
+import techpanel from "@/public/assets/techpanel.jpg";
+import spinco_nov from "@/public/assets/spinco_nov.jpg";
+import braceletmaking from "@/public/assets/braceletmaking.jpg";
 
 const Page = () => {
   return (
@@ -20,24 +24,7 @@ const Page = () => {
         <h1 className="text-[40px] font-bold">Upcoming Events</h1>
         <div className="p-10"/>
         <div className="flex justify-start space-x-56">
-        <EventBox
-            card={<CardImgPink/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
-        />
-          <EventBox
-            card={<CardImgBlue/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
-        />
-        <EventBox
-            card={<CardImgPurple/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
-          />
+          <p>Stay tuned for Upcoming Events!</p>
         </div>
 
         <div className="p-10"/>
@@ -49,22 +36,22 @@ const Page = () => {
         <div className="p-10"/>
         <div className="flex justify-start space-x-56">
         <EventBox
-            card={<CardImgPink/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
+            card={<CardImgPink img={gitpub}/>}
+            date={'April 3rd, 2024'}
+            name={'GitPub'}
+            info={'Join us for a night out of dancing and singing at DAFT brewing! Tickets are $15 through the link in our Instagram bio.'}
         />
           <EventBox
-            card={<CardImgBlue/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
+            card={<CardImgBlue img={hackher}/>}
+            date={'March 9-10th, 2024'}
+            name={'HackHer'}
+            info={'QWIC\'s annual Hackathon is coming this March! Applications open Feb 2, 2024. Stay tuned for panels, sponsors and other details!'}
         />
         <EventBox
-            card={<CardImgPurple/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
+            card={<CardImgPurple img={spinco_feb}/>}
+            date={'February 11th, 2024'}
+            name={'QWIC x SpinCo'}
+            info={'We had such a bllast last semester at spinco that WE HAD to bring it back! Tickets are live in our Instagram bio, get them before they sell out!'}
           />
         </div>
 
@@ -72,22 +59,22 @@ const Page = () => {
 
         <div className="flex justify-start space-x-56">
         <EventBox
-            card={<CardImgPink/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
+            card={<CardImgPink img={techpanel}/>}
+            date={'November 15th, 2023'}
+            name={'Technical Internship Panel'}
+            info={'Interested in learning what goes on during an internship? Meet panelists from companies such as Microsoft, Whitehorse Liquidity Partners, Bank of Canada, Toronto Blue Jays and more!'}
         />
           <EventBox
-            card={<CardImgBlue/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
+            card={<CardImgBlue img={spinco_nov}/>}
+            date={'November 4th, 2023'}
+            name={'QWIC x SpinCo'}
+            info={'QWIC takes over SpinCo! Going to be super fun with great music and even better vibes. Tickets are $15 through the link in our Instagram bio, get them before they sell out!'}
         />
         <EventBox
-            card={<CardImgPurple/>}
-            date={'Monday Aug 26'}
-            name={'Event Name'}
-            info={'Event Info'}
+            card={<CardImgPurple img={braceletmaking}/>}
+            date={'September 16th, 2023'}
+            name={'Bracelet Making'}
+            info={'Kick the year off by joining us at MacDonald Park from 1-3pm for some bracelet making! All are welcome, come meet people or bring a friend!'}
           />
         </div>
 
