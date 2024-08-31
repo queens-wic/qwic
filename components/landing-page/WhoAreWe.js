@@ -5,7 +5,7 @@ import CardTextPurple from "../cards/card-text-purple";
 
 const WhoAreWe = () => {
   return (
-    <div className="h-screen px-36 flex flex-col justify-center">
+    <div className="my-20 px-36 flex flex-col justify-center">
       <h1 className="text-[36px] font-bold">What We Do</h1>
       <div className="mt-10 flex flex-row gap-4 justify-between">
         <CardTextPink
@@ -15,6 +15,7 @@ const WhoAreWe = () => {
           }
           more={"Discover Events"}
           img={"/assets/event_img.png"}
+          link={"/events"}
         />
         <CardTextBlue
           title={"Mentorship"}
@@ -23,6 +24,7 @@ const WhoAreWe = () => {
           }
           more={"Learn More"}
           img={"/assets/ppl_img.png"}
+          link={"/mentorship"}
         />
         <CardTextPurple
           title={"Community"}
@@ -31,6 +33,7 @@ const WhoAreWe = () => {
           }
           more={"Get Involved"}
           img={"/assets/comm_img.png"}
+          link={"/"}
         />
       </div>
     </div>
