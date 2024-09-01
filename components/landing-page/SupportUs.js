@@ -5,10 +5,12 @@ import Link from "next/link";
 
 const SupportUs = () => {
   return (
-    <div className="relative flex flex-col justify-center mt-12 h-screen">
-      <h1 className="text-[36px] font-bold mx-36 mb-6">Support Our Mission</h1>
+    <div className="relative flex flex-col justify-center my-20">
+      <h1 className="text-[36px] font-bold mx-8 md:mx-20 lg:mx-36 mb-4">
+        Support Our Mission
+      </h1>
       {/* Container for background and main content */}
-      <div className="relative mx-36 flex flex-row items-center justify-between mb-20">
+      <div className="relative mx-8 md:mx-20 lg:mx-36 flex flex-row items-center justify-between mb-20">
         {/* Background Box */}
         <div className="absolute inset-0 z-0 bg-dark-blue rounded-2xl transform -translate-x-5 translate-y-5"></div>
 
@@ -47,7 +49,7 @@ const SupportUs = () => {
               />
             </a>
           </div>
-          <div className="">
+          <div className="hidden sm:block overflow-hidden">
             <Image
               src="/landing-page/support.svg"
               width={331}
