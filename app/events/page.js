@@ -48,6 +48,7 @@ const Page = () => {
         <div className="p-6"/>
         <h1 className="text-[40px] font-bold">Previous Events</h1>
         <div className="p-6"/>
+
         <div className="flex justify-start space-x-56">
         <EventBox
             card={<CardImgPink img={gitpub}/>}
@@ -71,14 +72,14 @@ const Page = () => {
 
         <div className="h-24"></div>
 
-        <div className="flex justify-start space-x-56">
+        <div className="flex flex-row justify-start space-x-56">
         <EventBox
             card={<CardImgPink img={techpanel}/>}
             date={'November 15th, 2023'}
             name={'Technical Internship Panel'}
             info={'Interested in learning what goes on during an internship? Meet panelists from companies such as Microsoft, Whitehorse Liquidity Partners, Bank of Canada, Toronto Blue Jays and more!'}
         />
-          <EventBox
+        <EventBox
             card={<CardImgBlue img={spinco_nov}/>}
             date={'November 4th, 2023'}
             name={'QWIC x SpinCo'}
