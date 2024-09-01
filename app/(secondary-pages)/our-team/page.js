@@ -1,4 +1,5 @@
 import React from "react";
+import Wip from "@/components/Wip";
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
           </p>
         </div>
       </div>
+      <Wip />
     </div>
   );
 };

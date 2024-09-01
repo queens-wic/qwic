@@ -1,5 +1,5 @@
 import React from "react";
-
+import Wip from "@/components/Wip";
 const page = () => {
   return (
     <div>
@@ -15,6 +15,7 @@ const page = () => {
           </p>
         </div>
       </div>
+      <Wip />
     </div>
   );
 };
