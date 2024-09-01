@@ -33,7 +33,7 @@ const WhoAreWe = () => {
           }
           more={"Get Involved"}
           img={"/assets/comm_img.png"}
-          link={"/"}
+          link={"/community"}
         />
       </div>
     </div>

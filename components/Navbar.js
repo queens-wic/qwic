@@ -52,15 +52,15 @@ const Navbar = () => {
         <ul className="hidden lg:flex">
           <ul className="flex flex-row gap-10 text-[15px] font-bold">
             <li>
-              <Link href="/who-we-are" className="hover:text-dark-purple">
-                Who Are We
-              </Link>
-            </li>
-            <li>
               <Link href="/events" className="hover:text-dark-purple">
                 Events
               </Link>
             </li>
+            {/* <li>
+              <Link href="/hackher" className="hover:text-dark-purple">
+                HackHer
+              </Link>
+            </li> */}
             <li>
               <Link href="/resources" className="hover:text-dark-purple">
                 Resources For Students
@@ -72,15 +72,20 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/partnerships" className="hover:text-dark-purple">
-                Partnerships
-              </Link>
-            </li>
-            <li>
               <Link href="/our-team" className="hover:text-dark-purple">
                 Our Team
               </Link>
             </li>
+            <li>
+              <Link href="/community" className="hover:text-dark-purple">
+                Community
+              </Link>
+            </li>
+            {/* <li>
+              <Link href="/shop" className="hover:text-dark-purple">
+                Shop
+              </Link>
+            </li> */}
           </ul>
         </ul>
       </nav>
