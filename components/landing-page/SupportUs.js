@@ -1,7 +1,6 @@
 import React from "react";
 import SponserScroll from "./SponserScroll";
 import Image from "next/image";
-import Link from "next/link";
 
 const SupportUs = () => {
   return (

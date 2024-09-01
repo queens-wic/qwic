@@ -1,10 +1,6 @@
 import React from "react";
-import { RoughNotation } from "react-rough-notation";
 import Navbar from "../Navbar";
 import Image from "next/image";
-import CardTextPink from "../cards/card-text-pink";
-import CardTextBlue from "../cards/card-text-blue";
-import CardTextPurple from "../cards/card-text-purple";
 
 const Hero = () => {
   return (
@@ -13,7 +9,6 @@ const Hero = () => {
         <div className="z-40 mb-auto w-full">
           <Navbar />
         </div>
-        {/* <div className="absolute inset-0 inverted-radius bg-gradient-to-b from-[#DDDBF5]/50 to-[#E0A4D7]/40 z-0"></div> */}
         <div className="relative">
           <div className="z-10 absolute top-20 -left-44 w-2/6 h-2/6  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           {/* <div className="z-10 absolute bottom-0 -right-4 w-3/6 h-3/6  bg-light-blue rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob animation-delay-2000"></div> */}
@@ -28,7 +23,6 @@ const Hero = () => {
               and anyone passionate about technology.
             </p>
           </div>
-          {/* <div className="bg-[#F5F5F5] w-full h-16 z-10 mt-auto rounded-t-[70px]"></div> */}
           <Image
             src="/landing-page/hero.png"
             // className="align-center"
