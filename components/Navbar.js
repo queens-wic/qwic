@@ -56,11 +56,11 @@ const Navbar = () => {
                 Events
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/hackher" className="hover:text-dark-purple">
                 HackHer
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link href="/resources" className="hover:text-dark-purple">
                 Resources For Students

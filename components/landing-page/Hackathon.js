@@ -32,7 +32,7 @@ const Hackathon = () => {
             technical skill levels are empowered and encouraged to develop their
             abilities.
           </p>
-          <Link href="/">
+          <Link href="/hackher">
             <div className="flex justify-between items-center gap-6 w-fit py-4 transition ease-in-out delay-100 hover:translate-x-2">
               <span className="text-[20px] font-semi-bold">Learn More</span>
               <Image
