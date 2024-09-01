@@ -10,8 +10,7 @@ const page = () => {
           <h1 className="text-[36px] font-boldt">Upcoming Events</h1>
         </div>
       </div>
-      <div className="h-full mx-36 flex justify-center items-center py-28">
-        </div>
+      <div className="h-full mx-36 flex justify-center items-center py-28"></div>
     </div>
   );
 };
