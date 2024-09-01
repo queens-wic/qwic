@@ -140,34 +140,70 @@ const page = () => {
 
       {/* Join the program */}
       <div className="h-full px-36 flex flex-col justify-center py-28">
+        <h2 className="text-[30px] font-bold">Join the mentorship program</h2>
         <div>
-          <h2 className="text-[30px] font-bold">Join the mentorship program</h2>
-          <div className="flex justify-around items-center h-full mt-10 w-full gap-10">
-            <div className="p-8 bg-white rounded-xl drop-shadow-[0_0px_10px_rgba(0,0,0,0.15)] w-2/5">
-              <h3 className="text-[24px] font-bold mt-4">
-                Apply to be a mentee
-              </h3>
-              <p className="text-secondary-text text-[18px] py-4">
-                Gain valuable guidance and support from experienced peers.
-                Connect with a mentor who can help you navigate your academic
-                and personal journey.
-              </p>
-              <button className="bg-qwic-pink transition ease-in-out delay-100 hover:translate-x-1 hover:bg-light-purple rounded-full border border-black py-2 px-4 font-semibold">
-                Become a Mentee
-              </button>
+          <div className="flex justify-around items-stretch mt-10 w-full gap-10">
+            <div className="relative w-1/2">
+              {/* Background Box */}
+              <div className="absolute inset-0 z-0 bg-dark-blue rounded-2xl transform -translate-x-5 translate-y-5"></div>
+              {/* Main Content Box */}
+              <div className="relative flex flex-row items-center border flex-1 h-full border-black bg-light-blue justify-between rounded-2xl py-6 px-12 z-10">
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-[24px] font-bold">
+                    Apply to be a mentor
+                  </h2>
+                  <p className="text-[18px] mt-4 text-secondary-text">
+                    Make a positive impact by supporting fellow students. Share
+                    your knowledge and experiences while developing your own
+                    leadership skills.
+                  </p>
+                  <a
+                    href=""
+                    className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
+                  >
+                    <span className="text-[20px] font-semi-bold pr-6">
+                      Become a mentor
+                    </span>
+                    <Image
+                      src={`/assets/arrow.svg`}
+                      alt="Learn More"
+                      width={25}
+                      height={25}
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="p-8 bg-white rounded-xl drop-shadow-[0_0px_10px_rgba(0,0,0,0.15)] w-2/5">
-              <h3 className="text-[24px] font-bold mt-4">
-                Apply to be a mentor
-              </h3>
-              <p className="text-secondary-text text-[18px] py-4">
-                Make a positive impact by supporting fellow students. Share your
-                knowledge and experiences while developing your own leadership
-                skills.
-              </p>
-              <button className="bg-qwic-pink transition ease-in-out delay-100 hover:translate-x-1 hover:bg-light-purple rounded-full border border-black py-2 px-4 font-semibold">
-                Become a Mentor
-              </button>
+            <div className="relative w-1/2">
+              {/* Background Box */}
+              <div className="absolute inset-0 z-0 flex-1 h-full bg-dark-blue rounded-2xl transform -translate-x-5 translate-y-5"></div>
+              {/* Main Content Box */}
+              <div className="relative flex flex-row items-center border border-black bg-light-blue justify-between rounded-2xl py-6 px-12 z-10">
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-[24px] font-bold">
+                    Apply to be a mentee
+                  </h2>
+                  <p className="text-[18px] mt-4 text-secondary-text">
+                    Gain valuable guidance and support from experienced peers.
+                    Connect with a mentor who can help you navigate your
+                    academic and personal journey.
+                  </p>
+                  <a
+                    href=""
+                    className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
+                  >
+                    <span className="text-[20px] font-semi-bold pr-6">
+                      Become a mentee
+                    </span>
+                    <Image
+                      src={`/assets/arrow.svg`}
+                      alt="Learn More"
+                      width={25}
+                      height={25}
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
