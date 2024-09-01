@@ -7,7 +7,7 @@ const WhoAreWe = () => {
   return (
     <div className="my-20 px-36 flex flex-col justify-center">
       <h1 className="text-[36px] font-bold">What We Do</h1>
-      <div className="mt-10 flex flex-row gap-4 justify-between">
+      <div className="mt-4 flex flex-row gap-4 justify-between">
         <CardTextPink
           title={"Events"}
           body={
