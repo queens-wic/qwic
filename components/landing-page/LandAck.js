@@ -11,7 +11,7 @@ const LandAck = () => {
 
         {/* Main Content Box */}
         <div className="relative flex flex-row items-center border border-black bg-light-purple justify-between rounded-2xl py-6 px-12 z-10">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center w-1/2">
             {/* <h2 className="text-[24px] font-bold">Sponsor Us</h2> */}
             <p className="text-[18px] mt-4 text-secondary-text">
               Queen’s University is situated on the territory of the
@@ -40,6 +40,20 @@ const LandAck = () => {
                 height={25}
               />
             </a>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Image
+              src={`/landing-page/anishinabe.svg`}
+              alt="Learn More"
+              width={300}
+              height={300}
+            />
+            <Image
+              src={`/landing-page/haudenosaunee.svg`}
+              alt="Learn More"
+              width={300}
+              height={300}
+            />
           </div>
         </div>
       </div>
