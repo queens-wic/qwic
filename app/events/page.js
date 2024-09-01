@@ -11,6 +11,9 @@ import spinco_feb from "@/public/assets/spinco_feb.jpg";
 import techpanel from "@/public/assets/techpanel.jpg";
 import spinco_nov from "@/public/assets/spinco_nov.jpg";
 import braceletmaking from "@/public/assets/braceletmaking.jpg";
+import IgButtonPink from "./button-pink";
+import IgButtonBlue from "./button-blue";
+
 
 const Page = () => {
   return (
@@ -22,18 +25,29 @@ const Page = () => {
 
       <div className="p-10"/>
         <h1 className="text-[40px] font-bold">Upcoming Events</h1>
-        <div className="p-10"/>
-        <div className="flex justify-start space-x-56">
+        <div className="p-6"/>
+        <div>
           <p>Stay tuned for Upcoming Events!</p>
+          <p>Keep an eye on our Instagram for more details...</p>
+          <div className="flex flex-row justify-start">
+            <IgButtonPink 
+            username={'@queenswic'}
+            link={'https://www.instagram.com/queenswic/'}
+            />
+            <IgButtonBlue 
+            username={'@qwic_community'}
+            link={'https://www.instagram.com/qwic_community/'}
+            />
+          </div>
         </div>
 
-        <div className="p-10"/>
+        <div className="p-6"/>
 
         <hr className="w-full border-t border-black my-4" />
 
-        <div className="p-10"/>
+        <div className="p-6"/>
         <h1 className="text-[40px] font-bold">Previous Events</h1>
-        <div className="p-10"/>
+        <div className="p-6"/>
         <div className="flex justify-start space-x-56">
         <EventBox
             card={<CardImgPink img={gitpub}/>}
@@ -51,7 +65,7 @@ const Page = () => {
             card={<CardImgPurple img={spinco_feb}/>}
             date={'February 11th, 2024'}
             name={'QWIC x SpinCo'}
-            info={'We had such a bllast last semester at spinco that WE HAD to bring it back! Tickets are live in our Instagram bio, get them before they sell out!'}
+            info={'We had such a blast last semester at spinco that WE HAD to bring it back! Tickets are live in our Instagram bio, get them before they sell out!'}
           />
         </div>
 
