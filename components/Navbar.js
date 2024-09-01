@@ -91,7 +91,7 @@ const Navbar = () => {
       </nav>
       <div className="hidden lg:flex">
         <Link
-          href="/contact"
+          href="/contact-us"
           className="hover:text-dark-blue text-[15px] font-bold"
         >
           Contact Us
