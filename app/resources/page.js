@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '@/public/assets/img_7.png'
 import ResourceBoxBlue from './ResourceBoxBlue'
 import ResourceBoxPink from './ResourceBoxPink'
 import ResourceBoxPurple from './ResourceBoxPurple'
@@ -65,7 +64,7 @@ const resources = [
       <ResourceBoxBlue
         img={codeorg}
         title={'Code.org'}
-        description={'A platform that provides free coding lessons and resources, aiming to make computer science accessible to students of all age'}
+        description={'A platform that provides free coding lessons and resources, aiming to make computer science accessible to students of all ages.'}
         id={'high-school-students'}
         link={'https://code.org/'}
       />
@@ -74,7 +73,7 @@ const resources = [
   {
     id: 'high-school-students',
     component: (
-      <ResourceBoxPink
+      <ResourceBoxBlue
         img={jack}
         title={'Jack.org'}
         description={'A Canadian organization focused on youth mental health, providing resources, peer support, and leadership opportunities for young people to lead mental health initiatives.'}
@@ -86,7 +85,7 @@ const resources = [
   {
     id: 'incoming-students',
     component: (
-      <ResourceBoxPurple
+      <ResourceBoxBlue
         img={sws}
         title={'Queen\'s University Student Wellness Services (SWS)'}
         description={'Offers comprehensive health and wellness support, including mental health counseling, medical services, and accessibility services to ensure students thrive academically and personally.'}
@@ -98,7 +97,7 @@ const resources = [
   {
     id: 'incoming-students',
     component: (
-      <ResourceBoxPurple
+      <ResourceBoxBlue
         img={sass}
         title={'Student Academic Success Services (SASS)'}
         description={'Provides academic support through workshops, one-on-one consultations, and resources to help students improve their study skills, writing, and time management.'}
@@ -110,7 +109,7 @@ const resources = [
   {
     id: 'incoming-students',
     component: (
-      <ResourceBoxPurple
+      <ResourceBoxPink
         img={fourdirections}
         title={'Four Directions Indigenous Student Centre'}
         description={'Provides a welcoming space and support for Indigenous students, offering cultural programming, academic advising, and a sense of community.'}
@@ -134,10 +133,10 @@ const resources = [
   {
     id: 'incoming-students',
     component: (
-      <ResourceBoxPurple
+      <ResourceBoxBlue
         img={mym}
         title={'Mind Your Mind'}
-        description={'mindyourmind is a mental health resource for youth, providing tools, information, and interactive activities to help manage stress, mental health, and well-being. The site also connects young people with resources and support in their communities..'}
+        description={'mindyourmind is a mental health resource for youth, providing tools, information, and interactive activities to help manage stress, mental health, and well-being. The site also connects young people with resources and support in their communities.'}
         id={'incoming-students'}
         link={'https://mindyourmind.ca/'}
       />
@@ -146,7 +145,7 @@ const resources = [
   {
     id: 'incoming-students',
     component: (
-      <ResourceBoxPurple
+      <ResourceBoxPink
         img={rho}
         title={'Rainbow Health Ontario'}
         description={'Rainbow Health Ontario is a resource that promotes the health and well-being of LGBTQ+ communities in Ontario. It offers information, support, and resources to help individuals find inclusive healthcare and mental health services.'}
