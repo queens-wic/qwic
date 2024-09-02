@@ -9,16 +9,16 @@ import linkedin from "../public/assets/linkedin.png";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-[#DDDBF5]/50 to-[#E0A4D7]/40 py-20 px-20">
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div>
           <Image
             src={logo}
             alt="Logo"
-            className="flex ml-84 mr-20 mt-84 w-[178px] h-[53px]"
+            className="flex ml-84 mr-20 mt-84 mb-10"
           />
         </div>
-        <div className="flex flex-col ml-10">
-          <div className="text-[20px] font-semibold mb-6">Connect with us</div>
+        <div className="flex flex-col md:ml-10">
+          <div className="text-[16px] font-semibold mb-6">Connect with us</div>
           <div className="grid grid-rows-2 grid-cols-2 gap-8 mb-6">
             {/* add gap stuff to grid*/}
             <div className="flex flex-row gap-3">
@@ -30,7 +30,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/queenswic/"
                 aria-label="Instagram"
-                className="text-[18px]"
+                className="text-[14px] hover:underline"
               >
                 Instagram
               </a>
@@ -44,7 +44,7 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/QueensWIC/"
                 aria-label="Facebook"
-                className="text-[18px]"
+                className="text-[14px] hover:underline"
               >
                 Facebook
               </a>
@@ -58,7 +58,7 @@ const Footer = () => {
               <a
                 href="https://www.tiktok.com/@queenswic"
                 aria-label="TikTok"
-                className="text-[18px]"
+                className="text-[14px] hover:underline"
               >
                 TikTok
               </a>
@@ -72,7 +72,7 @@ const Footer = () => {
               <a
                 href="https://ca.linkedin.com/company/queens-qwic"
                 aria-label="LinkedIn"
-                className="text-[18px]"
+                className="text-[14px] hover:underline"
               >
                 LinkedIn
               </a>
@@ -84,52 +84,10 @@ const Footer = () => {
         <div className="flex justify-center mt-12 mb-10">
           <div className="w-full h-[1px] bg-[#202632]/25"></div>
         </div>
-        <div className="flex flex-row justify-between mt-4">
+        <div className="flex justify-between mt-4">
           <div className="self-end text-[16px] text-secondary-text">
             © 2024 Queen's Women In Computing
           </div>
-          {/* <div className="flex flex-row self-end gap-9">
-            <a
-              href="https://www.instagram.com/queenswic/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={instagram}
-                alt="Instagram"
-                className="w-[24px] h-[24px]"
-              />
-            </a>
-            <a
-              href="https://www.tiktok.com/@queenswic"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={tiktok} alt="Tiktok" className="w-[24px] h-[24px]" />
-            </a>
-            <a
-              href="https://ca.linkedin.com/company/queens-qwic"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={linkedin}
-                alt="LinkedIn"
-                className="w-[24px] h-[24px]"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/QueensWIC/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={facebook}
-                alt="Facebook"
-                className="w-[24px] h-[24px]"
-              />
-            </a>
-          </div> */}
         </div>
       </div>
     </footer>
