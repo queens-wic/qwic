@@ -17,13 +17,14 @@ import IgButtonBlue from "./button-blue";
 
 const Page = () => {
   return (
-    <div className='bg-[#F5F5F5] min-h-screen h-full'>
+    <div className='h-screen'>
 
       <div className="p-4"/>
       <Header/>
-      <div className="mx-36">
 
-      <div className="p-10"/>
+      <div className="mx-36">
+        
+        <div className="p-10"/>
         <h1 className="text-[40px] font-bold">Upcoming Events</h1>
         <div className="p-6"/>
         <div>
@@ -49,7 +50,7 @@ const Page = () => {
         <h1 className="text-[40px] font-bold">Previous Events</h1>
         <div className="p-6"/>
 
-        <div className="flex justify-start space-x-56">
+        <div className="flex justify-start justify-between space-x-56">
         <EventBox
             card={<CardImgPink img={gitpub}/>}
             date={'April 3rd, 2024'}
@@ -72,7 +73,7 @@ const Page = () => {
 
         <div className="h-24"></div>
 
-        <div className="flex flex-row justify-start space-x-56">
+        <div className="flex justify-start justify-between space-x-56">
         <EventBox
             card={<CardImgPink img={techpanel}/>}
             date={'November 15th, 2023'}
@@ -96,7 +97,7 @@ const Page = () => {
 
       </div>
 
-      <div className="h-48"></div>
+      <div className="h-40"></div>
       <Footer/>
 
     </div>
