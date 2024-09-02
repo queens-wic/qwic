@@ -2,27 +2,31 @@ import React from "react";
 import CardImgBlue from "@/components/cards/card-img-blue";
 import CardImgPink from "@/components/cards/card-img-pink";
 import CardImgPurple from "@/components/cards/card-img-purple";
-import EventBox from "../events/event-box";
+import EventBox from "./event-box";
 import gitpub from "@/public/assets/gitpub.jpg";
 import hackher from "@/public/assets/hackher.jpg";
 import spinco_feb from "@/public/assets/spinco_feb.jpg";
 import techpanel from "@/public/assets/techpanel.jpg";
 import spinco_nov from "@/public/assets/spinco_nov.jpg";
 import braceletmaking from "@/public/assets/braceletmaking.jpg";
-import IgButtonPink from "../events/button-pink";
-import IgButtonBlue from "../events/button-blue";
+import IgButtonPink from "./button-pink";
+import IgButtonBlue from "./button-blue";
 
 const Page = () => {
   return (
-    <div className="min-h-screen h-full">
-      <div className="mx-36">
-        <div className="p-10" />
-        <h1 className="text-[40px] font-bold">Upcoming Events</h1>
-        <div className="p-6" />
+    <div className="h-fit">
+      <div className="mx-36 pt-10">
+        <div className="relative">
+          <h1 className="text-[36px] font-bold">Upcoming Events</h1>
+          <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
+          <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
+          <p className="text-secondary-text text-[18px] mt-4">
+            Stay tuned for Upcoming Events! Keep an eye on our Instagram for
+            more details...
+          </p>
+        </div>
         <div>
-          <p>Stay tuned for Upcoming Events!</p>
-          <p>Keep an eye on our Instagram for more details...</p>
-          <div className="flex flex-row justify-start">
+          <div className="flex flex-row justify-start mt-6">
             <IgButtonPink
               username={"@queenswic"}
               link={"https://www.instagram.com/queenswic/"}
@@ -33,16 +37,9 @@ const Page = () => {
             />
           </div>
         </div>
-
-        <div className="p-6" />
-
         <hr className="w-full border-t border-black my-4" />
-
-        <div className="p-6" />
-        <h1 className="text-[40px] font-bold">Previous Events</h1>
-        <div className="p-6" />
-
-        <div className="flex justify-start space-x-56">
+        <h1 className="text-[36px] font-bold mt-20 mb-6">Previous Events</h1>
+        <div className="flex justify-between w-full gap-8">
           <EventBox
             card={<CardImgPink img={gitpub} />}
             date={"April 3rd, 2024"}
@@ -68,10 +65,7 @@ const Page = () => {
             }
           />
         </div>
-
-        <div className="h-24"></div>
-
-        <div className="flex flex-row justify-start space-x-56">
+        <div className="flex justify-between w-full mt-20 gap-8">
           <EventBox
             card={<CardImgPink img={techpanel} />}
             date={"November 15th, 2023"}
@@ -99,7 +93,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="h-48"></div>
+      <div className="h-40"></div>
     </div>
   );
 };
