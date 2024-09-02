@@ -194,7 +194,7 @@ const Page = () => {
             </React.Fragment>
         ))}
 
-        <div className="p-32"/>
+        <div className="h-40"/>
       </div>
       <Footer/>
 
