@@ -46,9 +46,7 @@ const Page = () => {
 
         <hr className="w-full border-t border-black my-4" />
 
-        <div className="p-6"/>
-        <h1 className="text-[40px] font-bold">Previous Events</h1>
-        <div className="p-6"/>
+        <h1 className="text-[40px] font-bold p-6">Previous Events</h1>
 
         <div className="flex justify-start justify-between space-x-56">
         <EventBox
