@@ -1,10 +1,20 @@
 import React from "react";
-import Wip from "@/components/Wip";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import CardImgBlue from "@/components/cards/card-img-blue";
+import CardImgPink from "@/components/cards/card-img-pink";
+import CardImgPurple from "@/components/cards/card-img-purple";
+import MemberProfile from "./member-profile";
 
-const page = () => {
+import profiles from '@/app/(secondary-pages)/our-team/members.js';
+
+const Page = () => {
+
   return (
-    <div>
-      {/* Heading */}
+    <div className='h-screen'>
+      <div className="p-4" />
+      <div className="mx-36">
+        {/* Heading */}
       <div className="flex justify-center items-center pt-10 mx-36">
         <div className="relative">
           <h1 className="text-[36px] font-bold">Our Team</h1>
@@ -17,9 +27,36 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Wip />
+      
+        <div className="flex flex-wrap justify-between justify-center px-0">
+         {profiles.map((profile, index) => (
+          <div key={index}>
+            <MemberProfile
+              card={<CardImgPink img={profile.src}/>}
+              name={profile.name}
+              role={profile.role}
+            />
+          </div>
+        ))}
+        </div>
+      </div>
+
+      <div className="h-40"></div>
     </div>
   );
 };
 
-export default page;
+export default Page;
+
+
+// {profiles.map((profile, index) => (
+//   <div key={index}>
+//     <MemberProfile
+//       card={<CardImgPink img={gitpub}/>}
+//       name={profile.name}
+//       role={profile.role}
+//     />
+//   </div>
+// ))}
+
+
