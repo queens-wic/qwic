@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CardImgBlue from "@/components/cards/card-img-blue";
 import CardImgPink from "@/components/cards/card-img-pink";
 import CardImgPurple from "@/components/cards/card-img-purple";
@@ -27,7 +25,7 @@ const Page = () => {
           </p>
         </div>
       </div>
-      
+
         <div className="flex flex-wrap justify-between justify-center px-0">
          {profiles.map((profile, index) => (
           <div key={index}>
