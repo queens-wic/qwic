@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:ml-10">
           <div className="text-[16px] font-semibold mb-6">Connect with us</div>
-          <div className="grid grid-rows-2 grid-cols-2 gap-8 mb-6">
+          <div className="flex flex-row gap-10 mb-6">
             {/* add gap stuff to grid*/}
             <div className="flex flex-row gap-3">
               <Image
