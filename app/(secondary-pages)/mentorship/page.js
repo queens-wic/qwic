@@ -29,36 +29,64 @@ const page = () => {
               <div className="flex justify-center">
                 <Image
                   src="/mentorship/personalGrowth.png"
-                  className="align-center"
                   width={200}
                   height={200}
-                  alt="Digital illustration of a girl smiling and making an OK symbol with her left hand."
+                  alt="Digital illustration of a two people smiling at eachother and giving thumbs up."
                 />
               </div>
-              <h3 className="text-[26px] font-bold mt-4">Foster Connections</h3>
-              <p className="text-[18px] mt-4 text-secondary-text">
-                Create and strengthen meaningful connections within a supportive
-                community. Build relationships with peers who share similar
-                interests and experiences, enriching your university life and
-                professional network.
-              </p>
+              <h3 className="text-[26px] font-bold mt-4">Personal Growth</h3>
+              <div>
+                <p className="text-[18px] mt-4 text-secondary-text">
+                  Becoming a mentor or mentee in the Bit-Byte Mentorship Program
+                  offers significant personal growth opportunities. As a mentor,
+                  you'll develop leadership, communication, and problem-solving
+                  skills while gaining a sense of fulfillment by guiding someone
+                  through the challenges of university life. As a mentee, you'll
+                  gain confidence, learn how to navigate university more
+                  effectively, and build resilience as you tackle new challenges
+                  with the guidance of an experienced upper-year student.
+                </p>
+                {/* <div>
+                  <p>Mentor:</p>
+                  <p>
+                    Develop leadership, communication, and problem-solving
+                    skills while gaining a sense of fulfillment by guiding
+                    someone through the challenges of university life.
+                  </p>
+                </div>
+                <div>
+                  <p>Mentee:</p>
+                  <p>
+                    Gain confidence, learn how to navigate university more
+                    effectively, and build resilience as you tackle new
+                    challenges with the guidance of an experienced upper-year
+                    student.
+                  </p>
+                </div> */}
+              </div>
             </div>
             <div className="flex-1 px-4">
               <div className="flex justify-center">
                 <Image
                   src="/mentorship/networking.png"
+                  className="align-center"
                   width={220}
                   height={220}
-                  alt="Digital illustration of a two people smiling at eachother and giving thumbs up."
+                  alt="Digital illustration of a girl smiling and making an OK symbol with her left hand."
                 />
               </div>
-              <h3 className="text-[26px] font-bold mt-4">Personal Growth</h3>
+              <h3 className="text-[26px] font-bold mt-4">Networking</h3>
               <p className="text-[18px] mt-4 text-secondary-text">
-                Grow through meaningful interactions. Mentors enhance leadership
-                skills, while mentees gain confidence and insights for their
-                journey.
+                This program provides a valuable networking opportunity within
+                the Queen's Women in Computing community. Mentors and mentees
+                alike can build lasting connections that extend beyond the
+                mentorship period, opening doors to future collaborations,
+                friendships, and even career opportunities. You'll be part of a
+                supportive network that can help you throughout your university
+                journey and beyond.
               </p>
             </div>
+
             <div className="flex-1 px-4">
               <div className="flex justify-center">
                 <Image
@@ -68,20 +96,26 @@ const page = () => {
                   alt="Digital illustration of a girl in a wheel chair sitting at her desk working at the computer."
                 />
               </div>
-              <h3 className="text-[26px] font-bold mt-4">Guidance & Support</h3>
+              <h3 className="text-[26px] font-bold mt-4">
+                Career Enhancements
+              </h3>
               <p className="text-[18px] mt-4 text-secondary-text">
-                Receive and provide valuable guidance tailored to your unique
-                needs and goals. From advice on course selection or sharing
-                career insights, both mentors and mentees will find support and
-                encouragement to navigate their university experience
-                effectively.
+                Participating in the Bit-Byte Mentorship Program can
+                significantly enhance your career prospects. Mentors will
+                strengthen their leadership and mentoring experience, which are
+                highly valued by employers. Mentees will receive personalized
+                advice on courses, internships, and career paths, helping them
+                make informed decisions that align with their career goals. This
+                program is also an excellent way to build your resume and
+                demonstrate your commitment to personal and professional
+                development.
               </p>
             </div>
           </div>
         </div>
       </div>
       {/* What students say section */}
-      <div className="h-fit px-36 bg-[url('/mentorship/bg.png')] flex flex-col py-10">
+      <div className="h-fit px-36 bg-gradient-to-b from-[#DDDBF5]/30 to-[#E0A4D7]/30 z-0 flex flex-col py-10">
         <div className="relative">
           <h2 className="text-[30px] font-bold z-10 pt-10 pl-16 relative">
             What previous students <br /> have to say about the program
@@ -98,40 +132,54 @@ const page = () => {
           <div className="grid grid-cols-12 grid-rows-2 gap-4">
             <div className="p-6 bg-white rounded-2xl col-start-2 col-span-4 h-auto flex flex-col justify-center px-6">
               <p className="text-secondary-text text-[18px]">
-                I was able to connect with a peer mentor who helped me select my
-                classes and made my first year a lot less stressful.
+                Mentoring was an opportunity for me to give back to the
+                community that helped me so much during my own first year. The
+                bond I formed with my mentee was incredible, and knowing I could
+                make a positive impact on someone’s university experience was
+                deeply fulfilling.
               </p>
               <div className="pt-4">
-                <h3 className="text-[24px] font-semibold">Jane Smith</h3>
-                <p className="text-secondary-text text-[18px]">
+                <h3 className="text-[24px] font-semibold">
+                  Upper Year Computing Student
+                </h3>
+                {/* <p className="text-secondary-text text-[18px]">
                   1st Year Bio Comp Student
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="p-6 bg-white rounded-2xl col-span-6 h-auto ml-20 flex flex-col justify-center mt-10">
               <p className="text-secondary-text text-[18px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
+                I was so nervous starting university, but having a mentor made
+                all the difference. My mentor was always there to answer my
+                questions and give me advice, whether it was about academics,
+                social life, or career plans. I felt supported every step of the
+                way, and I’m so grateful for the guidance I received.
               </p>
               <div className="pt-4">
-                <h3 className="text-[24px] font-semibold">Jane Smith</h3>
-                <p className="text-secondary-text text-[18px]">
-                  1st Year Bio Comp Student
-                </p>
+                <h3 className="text-[24px] font-semibold">
+                  First Year Computing Student
+                </h3>
+                {/* <p className="text-secondary-text text-[18px]">
+                  First Year Computing Student
+                </p> */}
               </div>
             </div>
             <div className="p-6 bg-white rounded-2xl col-start-4 col-span-6 h-auto flex flex-col justify-center mt-10">
               <p className="text-secondary-text text-[18px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
+                Being a mentor in the Bit-Byte program was one of the most
+                rewarding experiences of my time at Queen's. I loved being able
+                to share my knowledge and help my mentee navigate the
+                complexities of university life. It’s amazing to see how much my
+                mentee has grown, and I’ve learned so much from the experience
+                too.
               </p>
               <div className="pt-4">
-                <h3 className="text-[24px] font-semibold">Jane Smith</h3>
-                <p className="text-secondary-text text-[18px]">
+                <h3 className="text-[24px] font-semibold">
+                  Upper Year Computing Student
+                </h3>
+                {/* <p className="text-secondary-text text-[18px]">
                   1st Year Bio Comp Student
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -153,12 +201,16 @@ const page = () => {
                     Apply to be a mentor
                   </h2>
                   <p className="text-[18px] mt-4 text-secondary-text">
-                    Make a positive impact by supporting fellow students. Share
-                    your knowledge and experiences while developing your own
-                    leadership skills.
+                    As a mentor in the Bit-Byte Mentorship Program, you'll have
+                    the chance to make a meaningful impact on a student’s
+                    university experience. This role will help you develop
+                    leadership and communication skills while giving back to the
+                    QWIC community. Your guidance can shape someone’s academic
+                    and social life, making their transition into university
+                    smoother and more enjoyable.
                   </p>
                   <a
-                    href=""
+                    href="https://forms.gle/4Ap8mz8EvPBdxQhA9"
                     className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
                   >
                     <span className="text-[20px] font-semi-bold pr-6">
@@ -184,12 +236,16 @@ const page = () => {
                     Apply to be a mentee
                   </h2>
                   <p className="text-[18px] mt-4 text-secondary-text">
-                    Gain valuable guidance and support from experienced peers.
-                    Connect with a mentor who can help you navigate your
-                    academic and personal journey.
+                    Being a mentee in the Bit-Byte Mentorship Program is your
+                    chance to gain a friend and guide in an upper-year student
+                    who has been through what you’re about to experience. This
+                    is an opportunity to ask all your questions, gain
+                    confidence, and feel supported during your transition into
+                    university. You’ll be part of a close-knit community that’s
+                    here to help you succeed.
                   </p>
                   <a
-                    href=""
+                    href="https://forms.gle/4mkQc1QQYyazdFsW7"
                     className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
                   >
                     <span className="text-[20px] font-semi-bold pr-6">
