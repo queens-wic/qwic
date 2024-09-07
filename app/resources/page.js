@@ -177,10 +177,9 @@ const Page = () => {
 
         <div className="p-10"/>
         <h1 className="text-[40px] font-bold">Resources</h1>
-        <div className="p-10"/>
-        <FilterBar/>
-
-        <div className="p-10"/>
+        <p className='p-8 px-0 pb-16'>
+          Resources focused on academics, mental health and finding community, for incoming and high school students.
+        </p>
         {resources
           .map((resource) => ({
             ...resource,
