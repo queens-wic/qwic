@@ -5,17 +5,15 @@ import CardImgBlue from "@/components/cards/card-img-blue";
 import CardImgPink from "@/components/cards/card-img-pink";
 import CardImgPurple from "@/components/cards/card-img-purple";
 import MemberProfile from "./member-profile";
-import gitpub from "@/public/assets/gitpub.jpg";
 
-import profiles from "./members";
+import profiles from '@/app/our-team/members.js';
 
 const Page = () => {
-  const cardColors = [CardImgPink, CardImgBlue, CardImgPurple];
+
   return (
     <div className='h-screen'>
       <div className="p-4" />
       <Header />
-
       <div className="mx-36">
         <h1 className="text-[40px] font-bold pt-16 px-0">Meet our Team</h1>
         <p className="pt-10 pb-16 px-0">
@@ -23,15 +21,15 @@ const Page = () => {
         </p>
 
         <div className="flex flex-wrap justify-between justify-center px-0">
-          {profiles.map((profile, index) => (
-            <div key={index}>
-              <MemberProfile
-                card={<CardImgPink img={gitpub}/>}
-                name={profile.name}
-                role={profile.role}
-              />
-            </div>
-          ))}
+         {profiles.map((profile, index) => (
+          <div key={index}>
+            <MemberProfile
+              card={<CardImgPink img={profile.src}/>}
+              name={profile.name}
+              role={profile.role}
+            />
+          </div>
+        ))}
         </div>
       </div>
 
@@ -42,5 +40,16 @@ const Page = () => {
 };
 
 export default Page;
+
+
+// {profiles.map((profile, index) => (
+//   <div key={index}>
+//     <MemberProfile
+//       card={<CardImgPink img={gitpub}/>}
+//       name={profile.name}
+//       role={profile.role}
+//     />
+//   </div>
+// ))}
 
 

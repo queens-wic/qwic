@@ -1,25 +1,24 @@
-import React from "react";
 
-import allix from "qwic/public/profile-pics/allix.png";
-import amanda from "qwic/public/profile-pics/amanda.jpg"
-import ashley from "qwic/public/profile-pics/Ashley.jpg"
-import beth from "qwic/public/profile-pics/beth.png"
-import emmalb from "qwic/public/profile-pics/emma.jpeg"
-import jade from "qwic/public/profile-pics/jade.png"
-import kate from "qwic/public/profile-pics/kate.jpg"
-import kavita from "qwic/public/profile-pics/kavita.jpg"
-import lauren from "qwic/public/profile-pics/lauren.JPG"
-import lia from "qwic/public/profile-pics/lia.png"
-import lilyana from "qwic/public/profile-pics/lilyana.png"
-import madeleine from "qwic/public/profile-pics/Madeleine.jpeg"
-import maria from "qwic/public/profile-pics/maria.jpeg"
-import navya from "qwic/public/profile-pics/navya.jpg"
-import pheobe from "qwic/public/profile-pics/pheobe.png"
-import renee from "qwic/public/profile-pics/renee.png"
-import saanvi from "qwic/public/profile-pics/saanvi.JPG"
-import sari from "qwic/public/profile-pics/sari.png"
-import teagan from "qwic/public/profile-pics/teagan.png"
-import emptyprofile from "qwic/public/profile-pics/emptyprofile.png" //use as temp filler photo
+import allix from "@/public/profile-pics/allix.jpg";
+import amanda from "@/public/profile-pics/amanda.jpg"
+import ashley from "@/public/profile-pics/Ashley.jpg"
+import beth from "@/public/profile-pics/beth.jpg"
+import emmalb from "@/public/profile-pics/emma.jpg"
+import jade from "@/public/profile-pics/jade.jpg"
+import kate from "@/public/profile-pics/kate.jpg"
+import kavita from "@/public/profile-pics/kavita.jpg"
+import lauren from "@/public/profile-pics/lauren.jpg"
+import lia from "@/public/profile-pics/lia.jpg"
+import lilyana from "@/public/profile-pics/lilyana.jpg"
+import madeleine from "@/public/profile-pics/Madeleine.jpg"
+import maria from "@/public/profile-pics/maria.jpg"
+import navya from "@/public/profile-pics/navya.jpg"
+import pheobe from "@/public/profile-pics/pheobe.jpg"
+import renee from "@/public/profile-pics/renee.jpg"
+import saanvi from "@/public/profile-pics/saanvi.jpg"
+import sari from "@/public/profile-pics/sari.jpg"
+import teagan from "@/public/profile-pics/teagan.jpg"
+import emptyprofile from "@/public/profile-pics/emptyprofile.jpg" //use as temp filler photo
 
 // use place photo for Annika Tran, Keely McSpurren, Alyssa Zhao, Rena Hajjar, Kaleigh Feder
 
@@ -30,7 +29,7 @@ const profiles = [
   {src: {navya}, alt: 'Navya Bajwa, Community Coordinator', name: 'Navya Bajwa', role: 'Community Coordinator'},
   {src: {lilyana}, alt: 'Lilyana Boraniev, Community Coordinator', name: 'Lilyana Boraniev', role: 'Community Coordinator'},
   {src: {ashley}, alt: 'Ashley Van Rooyen, Community Coordinator', name: 'Ashley Van Rooyen', role: 'Community Coordinator'},
-  {src: {renee}, alt: 'Renee Kim, Vice-Chair of Marketin', name: 'Renee Kim', role: 'Vice-Chair of Marketing'},
+  {src: {renee}, alt: 'Renee Kim, Vice-Chair of Marketing', name: 'Renee Kim', role: 'Vice-Chair of Marketing'},
   {src: {emmalb}, alt: 'Emma Leitch-Blais, Marketing Coordinator', name: 'Emma Leitch-Blais', role: 'Marketing Coordinator'},
   {src: {emptyprofile}, alt: 'Alyssa Zhao, Marketing Coordinator', name: 'Alyssa Zhao', role: 'Marketing Coordinator'},
   {src: {amanda}, alt: 'Amanda Li, Graphic Designer', name: 'Amanda Li', role: 'Graphic Designer'},
@@ -50,3 +49,4 @@ const profiles = [
   {src: {lauren}, alt: 'Lauren Lidhar, Mentorship Coordinator', name: 'Lauren Lidhar', role: 'Mentorship Coordinator'}
 ];
 
+export default profiles;
