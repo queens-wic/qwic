@@ -31,8 +31,26 @@ const Footer = () => {
                 href="https://www.instagram.com/queenswic/"
                 aria-label="Instagram"
                 className="text-[14px] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Instagram
+                QWIC Instagram
+              </a>
+            </div>
+            <div className="flex flex-row gap-3">
+              <Image
+                src={instagram}
+                alt="Instagram"
+                className="flex flex-row w-[24px] h-[24px]"
+              ></Image>
+              <a
+                href="https://www.instagram.com/qwic_community/"
+                aria-label="Instagram"
+                className="text-[14px] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                QWIC Community Instagram
               </a>
             </div>
             <div className="flex flex-row gap-3">
@@ -45,6 +63,8 @@ const Footer = () => {
                 href="https://www.facebook.com/QueensWIC/"
                 aria-label="Facebook"
                 className="text-[14px] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Facebook
               </a>
@@ -59,6 +79,8 @@ const Footer = () => {
                 href="https://www.tiktok.com/@queenswic"
                 aria-label="TikTok"
                 className="text-[14px] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 TikTok
               </a>
@@ -73,6 +95,8 @@ const Footer = () => {
                 href="https://ca.linkedin.com/company/queens-qwic"
                 aria-label="LinkedIn"
                 className="text-[14px] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>

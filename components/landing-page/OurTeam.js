@@ -7,7 +7,7 @@ const OurTeam = () => {
       <h1 className="text-[36px] font-bold">
         Creating Connections and Learning Together
       </h1>
-      <p className="text-[18px] mt-4 text-secondary-text">
+      <p className="text-[18px] mt-4 text-secondary-text mb-8">
         QWIC is a community for all women, underrepresented minorities, and
         anyone who is passionate about technology and share the same values of
         equality.

@@ -212,6 +212,8 @@ const page = () => {
                   <a
                     href="https://forms.gle/4Ap8mz8EvPBdxQhA9"
                     className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="text-[20px] font-semi-bold pr-6">
                       Become a mentor
@@ -247,6 +249,8 @@ const page = () => {
                   <a
                     href="https://forms.gle/4mkQc1QQYyazdFsW7"
                     className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="text-[20px] font-semi-bold pr-6">
                       Become a mentee

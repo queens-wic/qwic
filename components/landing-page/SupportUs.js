@@ -5,7 +5,7 @@ import Image from "next/image";
 const SupportUs = () => {
   return (
     <div className="relative flex flex-col justify-center my-20">
-      <h1 className="text-[36px] font-bold mx-8 md:mx-20 lg:mx-36 mb-4">
+      <h1 className="text-[36px] font-bold mx-8 md:mx-20 lg:mx-36 mb-8">
         Support Our Mission
       </h1>
       {/* Container for background and main content */}
@@ -24,17 +24,8 @@ const SupportUs = () => {
               support our 4th annual QWIC hackathon, where students will
               innovate and excel
             </p>
-            <p className="mt-4 text-[18px] text-secondary-text">
-              Want to help support our club? Email our senior advisor, Keely
-              McSpurren at{" "}
-              <a href="mailto:20kjmm@queensu.ca">
-                <span className="font-extrabold underline">
-                  20kjmm@queensu.ca
-                </span>
-              </a>
-            </p>
             <a
-              href="mailto:20kjmm@queensu.ca"
+              href="mailto:qwic_chair@compsa.queensu.ca"
               className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
             >
               <span className="text-[20px] font-semi-bold pr-6">

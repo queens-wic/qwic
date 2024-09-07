@@ -2,7 +2,7 @@ import Image from "next/image";
 const LandAck = () => {
   return (
     <div className="relative flex flex-col justify-center my-20">
-      <h1 className="text-[36px] font-bold mx-8 md:mx-20 lg:mx-36 mb-6">
+      <h1 className="text-[36px] font-bold mx-8 md:mx-20 lg:mx-36 mb-8">
         Acknowledgement of Territory
       </h1>
       <div className="relative mx-8 md:mx-20 lg:mx-36 flex flex-row items-center justify-between mb-20">
