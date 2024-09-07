@@ -28,6 +28,8 @@ const LandAck = () => {
             </p>
             <a
               href="https://www.queensu.ca/indigenous/ways-knowing/workshops-and-training"
+              target="_blank" 
+              rel="noopener noreferrer"
               className="flex flex-row pt-6 transition ease-in-out delay-100 hover:translate-x-2"
             >
               <span className="text-[20px] font-semi-bold pr-6">
