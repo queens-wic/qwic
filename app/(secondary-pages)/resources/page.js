@@ -193,14 +193,19 @@ const resources = [
 const Page = () => {
   return (
     <div className="min-h-screen h-full">
-      <div className="p-4" />
-      <div className="mx-36">
-        <div className="p-10" />
-        <h1 className="text-[40px] font-bold">Resources</h1>
-        <p className="p-8 px-0 pb-16">
-          Resources focused on academics, mental health and finding community,
-          for incoming and high school students.
-        </p>
+      {/* Heading */}
+      <div className="flex justify-center items-center pt-10 mx-36">
+        <div className="relative w-full">
+          <h1 className="text-[36px] font-bold">Resources</h1>
+          <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
+          <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
+          <p className="text-secondary-text text-[18px] mt-4">
+            Resources focused on academics, mental health and finding community,
+            for incoming and high school students.
+          </p>
+        </div>
+      </div>
+      <div className="mx-36 mt-28">
         {resources
           .map((resource) => ({
             ...resource,
