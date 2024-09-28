@@ -14,11 +14,13 @@ const Hero = () => {
           {/* <div className="z-10 absolute bottom-0 -right-4 w-3/6 h-3/6  bg-light-blue rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob animation-delay-2000"></div> */}
           <div className="z-10 absolute left-3/4 w-96 h-96  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
           <div className="relative flex-grow flex flex-col justify-center items-center z-40 mx-8 md:mx-20 lg:mx-36 py-36 md:py-44 sm:py-41">
-            <h1 className=" text-6xl font-semibold">
+            <h1 className="lg:text-6xl text-5xl font-semibold">
               Helping you discover technology
             </h1>
-            <h1 className="text-6xl font-semibold pt-2">and feel empowered</h1>
-            <p className="text-lg mt-6 text-secondary-text">
+            <h1 className="lg:text-6xl text-5xl font-semibold pt-2">
+              and feel empowered
+            </h1>
+            <p className="lg:text-lg text-md mt-6 text-secondary-text">
               Fostering community for all women, underrepresented minorities,
               and anyone passionate about technology.
             </p>
