@@ -1,39 +1,35 @@
 import React from "react";
-import CardTextBlue from "../cards/card-text-blue";
-import CardTextPink from "../cards/card-text-pink";
-import CardTextPurple from "../cards/card-text-purple";
+import PurpleCard from "../cards/PurpleCard";
+import PinkCard from "../cards/PinkCard";
+import BlueCard from "../cards/BlueCard";
 
 const WhoAreWe = () => {
   return (
-    <div className="my-20 px-36 flex flex-col justify-center">
-      <h1 className="text-[36px] font-bold">What We Do</h1>
-      <div className="mt-8 flex flex-row gap-4 justify-between">
-        <CardTextPink
-          title={"Events"}
-          body={
-            "Fostering community for all women, underrepresented minorities, and anyone passionate about technology."
-          }
-          more={"Discover Events"}
-          img={"/assets/event_img.png"}
-          link={"/events"}
+    <div className="my-20 mx-4 md:mx-20 lg:mx-36 flex flex-col justify-center">
+      <h1 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">
+        What We Do
+      </h1>
+      <div className="flex flex-col xl:h-[475px] xl:flex-row xl:gap-4 justify-center">
+        <PinkCard
+          title="Events"
+          desc="Fostering a supportive community for all women, underrepresented minorities, and anyone who is passionate about technology and eager to connect with like-minded individuals. "
+          cta="Discover Events"
+          link="/events"
+          img={"/who-are-we/calendar.png"}
         />
-        <CardTextBlue
-          title={"Mentorship"}
-          body={
-            "Helping students interested in tech improve their exposure to fields beyond undergrad and guide them along their journey with industry & academic professionals"
-          }
-          more={"Learn More"}
-          img={"/assets/ppl_img.png"}
-          link={"/mentorship"}
+        <BlueCard
+          title="Mentorship"
+          desc="Helping students interested in tech improve their exposure to fields beyond undergrad and guide them along their journey with industry & academic professionals. "
+          cta="Learn More"
+          link="/mentorship"
+          img={"/who-are-we/people.png"}
         />
-        <CardTextPurple
-          title={"Community"}
-          body={
-            "Know what’s happening on your campus. Build your network. Get the best resources to start your career. Be a part of your computing community."
-          }
-          more={"Get Involved"}
-          img={"/assets/comm_img.png"}
-          link={"/community"}
+        <PurpleCard
+          title="Community"
+          desc="Know what’s happening on your campus. Build your network. Get the best resources to start your career. Be a part of your computing community. "
+          cta="Get Involved"
+          link="/community"
+          img={"/who-are-we/community.png"}
         />
       </div>
     </div>
