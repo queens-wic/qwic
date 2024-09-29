@@ -22,7 +22,7 @@ const Hackathon = () => {
       <div className="lg:w-1/2 w-full z-10 flex flex-col justify-center">
         <div className="flex justify-end">
           <div className="bg-light-pink py-2 px-4 rounded-full w-fit h-min rotate-12 font-semibold mb-4">
-            <p class="text-base sm:text-lg">200+ Hackers</p>
+            <p className="text-base sm:text-lg">200+ Hackers</p>
           </div>
         </div>
         <div className="ml-4">
@@ -48,7 +48,7 @@ const Hackathon = () => {
         </div>
         <div className="flex justify-end">
           <div className="bg-light-pink py-2 px-4 rounded-full w-fit h-min -rotate-12 font-semibold">
-            <p class="text-base sm:text-lg">$2000+ in Prizes</p>
+            <p className="text-base sm:text-lg">$2000+ in Prizes</p>
           </div>
         </div>
       </div>
