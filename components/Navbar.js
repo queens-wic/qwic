@@ -21,7 +21,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <nav className="flex flex-coL w-full">
+      <nav className="flex flex-col">
         {/* mobile menu  */}
         <section className="flex flex-col lg:hidden w-full">
           <div className="flex w-full justify-end">
