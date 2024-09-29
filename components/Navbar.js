@@ -21,7 +21,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <nav className="flex flex-col">
+      <nav className="flex flex-col lg:w-fit w-full">
         {/* mobile menu  */}
         <section className="flex flex-col lg:hidden w-full">
           <div className="flex w-full justify-end">
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${
+            className={`justify-self-center pb-3 lg:block md:pb-0 md:mt-0 ${
               isNavOpen ? "p-12 md:p-0 block" : "hidden"
             }`}
           >
