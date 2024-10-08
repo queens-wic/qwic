@@ -3,22 +3,35 @@ import Image from "next/image";
 import Link from "next/link";
 const OurTeam = () => {
   return (
-    <div className="h-screen mx-8 md:mx-20 lg:mx-36 flex flex-col justify-center">
-      <h1 className="text-[36px] font-bold">
+    <div className="xl:h-screen h-fit mb-20 xl:mb-0 mx-4 md:mx-20 lg:mx-36 flex flex-col justify-center">
+      <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">
         Creating Connections and Learning Together
-      </h1>
-      <p className="text-[18px] mt-4 text-secondary-text mb-8">
+      </h2>
+      <p className="text-base sm:text-lg mb-4 sm:mb-6 lg:mb-8 text-secondary-text">
         QWIC is a community for all women, underrepresented minorities, and
         anyone who is passionate about technology and share the same values of
         equality.
       </p>
-      <div className="self-center p-4">
-        <Image
-          src="/landing-page/ourTeam.png"
-          width={1500}
-          height={900}
-          alt="Collage of QWIC team pictures"
-        />
+      <div className="self-center p-2">
+        {/* For medium screens and larger */}
+        <div className="hidden xl:block">
+          <Image
+            src="/landing-page/ourTeam.png"
+            width={1500}
+            height={900}
+            alt="Collage of QWIC team pictures"
+          />
+        </div>
+
+        {/* For smaller screens */}
+        <div className="block xl:hidden">
+          <Image
+            src="/landing-page/ourTeamSmall.png"
+            width={900}
+            height={500}
+            alt="Collage of QWIC team pictures - smaller version"
+          />
+        </div>
       </div>
       <div className="flex justify-end">
         <Link href="/our-team">
