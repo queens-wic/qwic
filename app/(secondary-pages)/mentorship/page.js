@@ -98,8 +98,8 @@ const page = () => {
           />
         </div>
         <div className="mx-auto mt-10">
-          <div className="grid grid-cols-12 grid-rows-2 gap-4">
-            <div className="p-6 bg-white rounded-2xl col-start-2 col-span-4 h-auto flex flex-col justify-center px-6">
+          <div className="grid grid-cols-12 md:grid-rows-2 grid-rows-3 gap-4">
+            <div className="p-6 bg-white rounded-2xl md:col-start-2 col-span-12 md:col-span-4 h-auto flex flex-col justify-center px-6">
               <p className="text-secondary-text text-[18px]">
                 Mentoring was an opportunity for me to give back to the
                 community that helped me so much during my own first year. The
@@ -116,7 +116,7 @@ const page = () => {
                 </p> */}
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl col-span-6 h-auto ml-20 flex flex-col justify-center mt-10">
+            <div className="p-6 bg-white rounded-2xl col-span-12 md:col-span-6 h-auto md:ml-20 flex flex-col justify-center mt-10 row-start-2 md:row-auto">
               <p className="text-secondary-text text-[18px]">
                 I was so nervous starting university, but having a mentor made
                 all the difference. My mentor was always there to answer my
@@ -133,7 +133,7 @@ const page = () => {
                 </p> */}
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl col-start-4 col-span-6 h-auto flex flex-col justify-center mt-10">
+            <div className="p-6 bg-white rounded-2xl col-span-12 md:col-span-6 md:col-start-4 h-auto flex flex-col justify-center mt-10">
               <p className="text-secondary-text text-[18px]">
                 Being a mentor in the Bit-Byte program was one of the most
                 rewarding experiences of my time at Queen's. I loved being able
