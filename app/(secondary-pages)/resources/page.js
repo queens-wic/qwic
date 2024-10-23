@@ -139,7 +139,7 @@ const resources = [
         img={good2talk}
         title={"Good2Talk"}
         description={
-          "Good2Talk is a free, confidential support service for Canadian post-secondary students, offering 24/7 counseling and mental health resources. It provides help via phone or text to address student life challenges."
+          "Good2Talk is a free, confidential support service for Canadian post-secondary students, offering 24/7 via phone or text counseling and mental health resources."
         }
         id={"incoming-students"}
         link={"https://good2talk.ca/"}
@@ -153,7 +153,7 @@ const resources = [
         img={mym}
         title={"Mind Your Mind"}
         description={
-          "mindyourmind is a mental health resource for youth, providing tools, information, and interactive activities to help manage stress, mental health, and well-being. The site also connects young people with resources and support in their communities."
+          "Mind Your Mind is a mental health resource for youth, providing tools, information, and interactive activities to help manage stress, mental health, and well-being."
         }
         id={"incoming-students"}
         link={"https://mindyourmind.ca/"}
@@ -167,7 +167,7 @@ const resources = [
         img={rho}
         title={"Rainbow Health Ontario"}
         description={
-          "Rainbow Health Ontario is a resource that promotes the health and well-being of LGBTQ+ communities in Ontario. It offers information, support, and resources to help individuals find inclusive healthcare and mental health services."
+          "Promotes the health and well-being of LGBTQ+ communities in Ontario. Find information, support, and resources for inclusive healthcare and mental health services."
         }
         id={"incoming-students"}
         link={"https://www.rainbowhealthontario.ca/"}
@@ -181,7 +181,7 @@ const resources = [
         img={onwa}
         title={"Ontario Native Women’s Association"}
         description={
-          "The Ontario Native Women’s Association (ONWA) supports the well-being of Indigenous women and their families in Ontario. It provides resources, advocacy, and programs that focus on health, safety, and empowerment for Indigenous communities."
+          "Supports the well-being of Indigenous women and their families. Find resources, advocacy, and programs that focus on health, safety, and empowerment for Indigenous communities."
         }
         id={"incoming-students"}
         link={"https://www.onwa.ca/"}
@@ -192,37 +192,43 @@ const resources = [
 
 const Page = () => {
   return (
-    <div className="min-h-screen h-full">
+    <div className="min-h-screen h-full mx-36">
       {/* Heading */}
-      <div className="flex justify-center items-center pt-10 mx-36">
+      <div className="flex justify-center items-center pt-10">
         <div className="relative w-full">
           <h1 className="text-[36px] font-bold">Resources</h1>
-          <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
-          <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
+          <div className="z-10 absolute top-0 -left-10 w-44 h-44 bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
+          <div className="z-10 absolute right-10 w-44 h-44 bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
           <p className="text-secondary-text text-[18px] mt-4">
-            Resources focused on academics, mental health and finding community,
-            for incoming and high school students.
+            Resources focused on academics, mental health and finding community, for incoming and high school students.
           </p>
         </div>
       </div>
-      <div className="mx-36 mt-28">
-        {resources
-          .map((resource) => ({
-            ...resource,
-            title: resource.component.props.title, // Extract the title for sorting
-          }))
-          .sort((a, b) => a.title.localeCompare(b.title)) // Sort the resources alphabetically by title
-          .map((resource, index) => (
-            <React.Fragment key={index}>
-              {resource.component}
-              <div className="p-16" />
-            </React.Fragment>
-          ))}
+      
+      {/* Resource list */}
+      <div className="mt-16">
+        <div className="flex flex-col w-full flex-wrap gap-20
+        lg:flex-row lg:justify-between lg:mt-10 lg:mb-10 
+        xl:grid xl:grid-cols-3 xl:mt-10 xl:mb-10"
+        >
+          {resources
+            .map((resource) => ({
+              ...resource,
+              title: resource.component.props.title, // Extract the title for sorting
+            }))
+            .sort((a, b) => a.title.localeCompare(b.title)) // Sort the resources alphabetically by title
+            .map((resource, index) => (
+              <React.Fragment key={index}>
+                {resource.component}
+              </React.Fragment>
+            ))}
+        </div>
 
         <div className="h-40" />
       </div>
     </div>
   );
 };
+
 
 export default Page;
