@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       {/* Heading */}
-      <div className="flex justify-center items-center pt-10 mx-36">
+      <div className="flex justify-center items-center pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
         <div className="relative">
           <h1 className="text-[36px] font-bold">
             Bits and Bytes Mentorship Program
@@ -21,10 +21,10 @@ const page = () => {
         </div>
       </div>
       {/* What's in it for you? */}
-      <div className="h-full mx-36 flex justify-center items-center py-28">
+      <div className="h-full flex justify-center items-center mx-4 sm:mx-8 md:mx-16 lg:mx-36 py-36 md:py-44 sm:py-41">
         <div>
           <h2 className="text-[30px] font-bold">What's in it for you?</h2>
-          <div className="flex flex-row justify-between mt-8 ">
+          <div className="flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between mt-8 ">
             <div className="flex-1 px-4">
               <div className="flex justify-center">
                 <Image
@@ -37,32 +37,10 @@ const page = () => {
               <h3 className="text-[26px] font-bold mt-4">Personal Growth</h3>
               <div>
                 <p className="text-[18px] mt-4 text-secondary-text">
-                  Becoming a mentor or mentee in the Bit-Byte Mentorship Program
-                  offers significant personal growth opportunities. As a mentor,
-                  you'll develop leadership, communication, and problem-solving
-                  skills while gaining a sense of fulfillment by guiding someone
-                  through the challenges of university life. As a mentee, you'll
-                  gain confidence, learn how to navigate university more
-                  effectively, and build resilience as you tackle new challenges
-                  with the guidance of an experienced upper-year student.
+                  This program fosters personal growth for both mentors and
+                  mentees. Mentors enhance leadership skills, while mentees gain
+                  confidence and resilience with upper-year guidance.
                 </p>
-                {/* <div>
-                  <p>Mentor:</p>
-                  <p>
-                    Develop leadership, communication, and problem-solving
-                    skills while gaining a sense of fulfillment by guiding
-                    someone through the challenges of university life.
-                  </p>
-                </div>
-                <div>
-                  <p>Mentee:</p>
-                  <p>
-                    Gain confidence, learn how to navigate university more
-                    effectively, and build resilience as you tackle new
-                    challenges with the guidance of an experienced upper-year
-                    student.
-                  </p>
-                </div> */}
               </div>
             </div>
             <div className="flex-1 px-4">
@@ -77,13 +55,9 @@ const page = () => {
               </div>
               <h3 className="text-[26px] font-bold mt-4">Networking</h3>
               <p className="text-[18px] mt-4 text-secondary-text">
-                This program provides a valuable networking opportunity within
-                the Queen's Women in Computing community. Mentors and mentees
-                alike can build lasting connections that extend beyond the
-                mentorship period, opening doors to future collaborations,
-                friendships, and even career opportunities. You'll be part of a
-                supportive network that can help you throughout your university
-                journey and beyond.
+                Network within Queen's Women in Computing community. Both
+                mentors and mentees build lasting connections, opening doors to
+                future collaborations, friendships, and career opportunities.
               </p>
             </div>
 
@@ -100,22 +74,17 @@ const page = () => {
                 Career Enhancements
               </h3>
               <p className="text-[18px] mt-4 text-secondary-text">
-                Participating in the Bit-Byte Mentorship Program can
-                significantly enhance your career prospects. Mentors will
-                strengthen their leadership and mentoring experience, which are
-                highly valued by employers. Mentees will receive personalized
-                advice on courses, internships, and career paths, helping them
-                make informed decisions that align with their career goals. This
-                program is also an excellent way to build your resume and
-                demonstrate your commitment to personal and professional
-                development.
+                Boost career prospects for both mentors and mentees. Mentors
+                gain leadership experience, while mentees receive personalized
+                advice on courses, internships, and career paths, enhancing
+                their resumes and personal development.
               </p>
             </div>
           </div>
         </div>
       </div>
       {/* What students say section */}
-      <div className="h-fit px-36 bg-gradient-to-b from-[#DDDBF5]/30 to-[#E0A4D7]/30 z-0 flex flex-col py-10">
+      <div className="h-fit bg-gradient-to-b from-[#DDDBF5]/30 to-[#E0A4D7]/30 z-0 flex flex-col px-4 sm:px-8 md:px-16 lg:x-36 py-36 md:py-44 sm:py-41">
         <div className="relative">
           <h2 className="text-[30px] font-bold z-10 pt-10 pl-16 relative">
             What previous students <br /> have to say about the program
@@ -129,8 +98,8 @@ const page = () => {
           />
         </div>
         <div className="mx-auto mt-10">
-          <div className="grid grid-cols-12 grid-rows-2 gap-4">
-            <div className="p-6 bg-white rounded-2xl col-start-2 col-span-4 h-auto flex flex-col justify-center px-6">
+          <div className="grid grid-cols-12 md:grid-rows-2 grid-rows-3 gap-4">
+            <div className="p-6 bg-white rounded-2xl md:col-start-2 col-span-12 md:col-span-4 h-auto flex flex-col justify-center px-6">
               <p className="text-secondary-text text-[18px]">
                 Mentoring was an opportunity for me to give back to the
                 community that helped me so much during my own first year. The
@@ -147,7 +116,7 @@ const page = () => {
                 </p> */}
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl col-span-6 h-auto ml-20 flex flex-col justify-center mt-10">
+            <div className="p-6 bg-white rounded-2xl col-span-12 md:col-span-6 h-auto md:ml-20 flex flex-col justify-center mt-10 row-start-2 md:row-auto">
               <p className="text-secondary-text text-[18px]">
                 I was so nervous starting university, but having a mentor made
                 all the difference. My mentor was always there to answer my
@@ -164,7 +133,7 @@ const page = () => {
                 </p> */}
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl col-start-4 col-span-6 h-auto flex flex-col justify-center mt-10">
+            <div className="p-6 bg-white rounded-2xl col-span-12 md:col-span-6 md:col-start-4 h-auto flex flex-col justify-center mt-10">
               <p className="text-secondary-text text-[18px]">
                 Being a mentor in the Bit-Byte program was one of the most
                 rewarding experiences of my time at Queen's. I loved being able
@@ -187,11 +156,11 @@ const page = () => {
       </div>
 
       {/* Join the program */}
-      <div className="h-full px-36 flex flex-col justify-center py-28">
+      <div className="h-full flex flex-col justify-center mx-4 sm:mx-8 md:mx-16 lg:mx-36 py-36 md:py-44 sm:py-41">
         <h2 className="text-[30px] font-bold">Join the mentorship program</h2>
         <div>
-          <div className="flex justify-around items-stretch mt-10 w-full gap-10">
-            <div className="relative w-1/2">
+          <div className="flex flex-col md:flex-row justify-around items-stretch mt-10 w-full gap-10">
+            <div className="relative md:w-1/2  ml-5">
               {/* Background Box */}
               <div className="absolute inset-0 z-0 bg-dark-blue rounded-2xl transform -translate-x-5 translate-y-5"></div>
               {/* Main Content Box */}
@@ -228,7 +197,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="relative w-1/2">
+            <div className="relative md:w-1/2  ml-5">
               {/* Background Box */}
               <div className="absolute inset-0 z-0 flex-1 h-full bg-dark-blue rounded-2xl transform -translate-x-5 translate-y-5"></div>
               {/* Main Content Box */}
