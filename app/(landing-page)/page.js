@@ -1,11 +1,12 @@
 import React from "react";
 import {
   Hero,
-  WhoAreWe,
+  WhatWeDo,
   OurTeam,
   Hackathon,
   SupportUs,
   LandAck,
+  WhoAreWe,
 } from "../../components/landing-page";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <WhoAreWe />
+        <WhatWeDo />
         <OurTeam />
         <Hackathon />
         <SupportUs />
