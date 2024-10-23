@@ -12,18 +12,19 @@ import braceletmaking from "@/public/assets/braceletmaking.jpg";
 import IgButtonPink from "./button-pink";
 import IgButtonBlue from "./button-blue";
 
+import braceletmaking2024 from "@/public/assets/bracelet_making_event.png";
+import meet_mentors from "@/public/assets/meet_mentors.png";
+
 const Page = () => {
   return (
     <div className="h-fit">
       <div className="mx-36 pt-10">
+
+        {/* Title, blobs and buttons to IG, no additional responsive fix necessary */}
         <div className="relative">
-          <h1 className="text-[36px] font-bold">Upcoming Events</h1>
+          <h1 className="text-[36px] font-bold">Current Events</h1>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
-          <p className="text-secondary-text text-[18px] mt-4">
-            Stay tuned for Upcoming Events! Keep an eye on our Instagram for
-            more details...
-          </p>
         </div>
         <div>
           <div className="flex flex-row justify-start mt-6">
@@ -36,10 +37,41 @@ const Page = () => {
               link={"https://www.instagram.com/qwic_community/"}
             />
           </div>
+
+          {/* Current Events, adjust to flex-cols, with rows of 3 at xl breakpoint (row of 2 at lg breakpint???) */}
+        
+        <div className="flex flex-col w-full flex-wrap
+          lg:flex-row lg:justify-between lg:gap-8 lg:mt-6 lg:mb-10 
+          xl:grid xl:grid-cols-3 xl:gap-8"
+        >
+            <EventBox
+              card={<CardImgPink img={meet_mentors} />}
+              date={"September 23rd, 2024"}
+              name={"Meet the Mentors Game Night"}
+              info={
+                "Interested in becoming a mentee in our bits and bytes mentorship program? Join us in CasLab from 6 - 7:30pm to meet the mentors!"
+              }
+            />
+            <EventBox
+              card={<CardImgBlue img={braceletmaking2024} />}
+              date={"September 15, 2024"}
+              name={"Bracelet Making"}
+              info={
+                "Kick off the school year with bracelet making with QWIC! Join us in MacDonald Park from 12 - 2pm near the tube sculpture"
+              }
+            />
+          </div>
         </div>
-        <hr className="w-full border-t border-black my-4" />
-        <h1 className="text-[36px] font-bold mt-20 mb-6">Previous Events</h1>
-        <div className="flex justify-between w-full gap-8">
+
+        {/* Previous Events, adjust to flex-cols, with rows of 3 at xl breakpoint (row of 2 at lg breakpint???) */}
+        <hr className="w-full border-t mt-10  border-black my-4" />
+        <h1 className="text-[36px] font-bold mt-10 mb-4">Previous Events</h1>
+
+        <div className="flex flex-col w-full flex-wrap
+          lg:flex-row lg:justify-between lg:gap-8 lg:mt-6 lg:mb-10 
+          xl:grid xl:grid-cols-3 xl:gap-8"
+        >
+          
           <EventBox
             card={<CardImgPink img={gitpub} />}
             date={"April 3rd, 2024"}
@@ -64,8 +96,7 @@ const Page = () => {
               "We had such a blast last semester at spinco that WE HAD to bring it back! Tickets are live in our Instagram bio, get them before they sell out!"
             }
           />
-        </div>
-        <div className="flex justify-between w-full mt-20 gap-8">
+
           <EventBox
             card={<CardImgPink img={techpanel} />}
             date={"November 15th, 2023"}
