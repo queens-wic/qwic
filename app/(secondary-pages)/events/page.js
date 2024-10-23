@@ -21,7 +21,6 @@ const Page = () => {
       <div className="mx-36 pt-10">
 
         {/* Title, blobs and buttons to IG, no additional responsive fix necessary */}
-        {/* TEST */}
         <div className="relative">
           <h1 className="text-[36px] font-bold">Current Events</h1>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
