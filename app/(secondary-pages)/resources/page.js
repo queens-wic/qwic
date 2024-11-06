@@ -23,7 +23,7 @@ const resources = [
   {
     id: "high-school-students",
     component: (
-      <ResourceBoxBlue
+      <ResourceBoxPurple
         img={girlswhocode}
         title={"Girls Who Code"}
         description={
@@ -83,7 +83,7 @@ const resources = [
         img={jack}
         title={"Jack.org"}
         description={
-          "A Canadian organization focused on youth mental health, providing resources, peer support, and leadership opportunities for young people to lead mental health initiatives."
+          "A Canadian organization focused on youth mental health, providing resources, peer support, and leadership opportunities."
         }
         id={"high-school-students"}
         link={"https://jack.org/"}
@@ -97,7 +97,7 @@ const resources = [
         img={sws}
         title={"Student Wellness Services"}
         description={
-          "Offers comprehensive health and wellness support, including mental health counseling, medical services, and accessibility services to ensure students thrive academically and personally."
+          "Offers comprehensive health and wellness support, including mental health counseling and medical services."
         }
         id={"incoming-students"}
         link={"https://www.queensu.ca/studentwellness/"}
@@ -111,7 +111,7 @@ const resources = [
         img={sass}
         title={"Student Academic Success Services"}
         description={
-          "Provides academic support through workshops, one-on-one consultations, and resources to help students improve their study skills, writing, and time management."
+          "Provides academic support to help students improve their study skills, writing, and time management."
         }
         id={"incoming-students"}
         link={"https://sass.queensu.ca/"}
@@ -125,7 +125,7 @@ const resources = [
         img={fourdirections}
         title={"Four Directions Indigenous Student Centre"}
         description={
-          "Provides a welcoming space and support for Indigenous students, offering cultural programming, academic advising, and a sense of community."
+          "Cultural programming, academic advising, and community for Indigenous students."
         }
         id={"incoming-students"}
         link={"https://www.queensu.ca/fourdirections/"}
@@ -181,7 +181,7 @@ const resources = [
         img={onwa}
         title={"Ontario Native Women’s Association"}
         description={
-          "Supports the well-being of Indigenous women and their families. Find resources, advocacy, and programs that focus on health, safety, and empowerment for Indigenous communities."
+          "Find resources, advocacy, and programs that focus on health, safety, and empowerment for Indigenous communities."
         }
         id={"incoming-students"}
         link={"https://www.onwa.ca/"}
