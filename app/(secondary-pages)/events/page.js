@@ -3,17 +3,22 @@ import CardImgBlue from "@/components/cards/card-img-blue";
 import CardImgPink from "@/components/cards/card-img-pink";
 import CardImgPurple from "@/components/cards/card-img-purple";
 import EventBox from "./event-box";
-import gitpub from "@/public/assets/gitpub.jpg";
-import hackher from "@/public/assets/hackher.jpg";
-import spinco_feb from "@/public/assets/spinco_feb.jpg";
-import techpanel from "@/public/assets/techpanel.jpg";
-import spinco_nov from "@/public/assets/spinco_nov.jpg";
-import braceletmaking from "@/public/assets/braceletmaking.jpg";
 import IgButtonPink from "./button-pink";
 import IgButtonBlue from "./button-blue";
 
-import braceletmaking2024 from "@/public/assets/bracelet_making_event.png";
-import meet_mentors from "@/public/assets/meet_mentors.png";
+// old events
+import gitpub from "@/public/events/gitpub.jpg";
+import hackher from "@/public/events/hackher.jpg";
+import spinco_feb from "@/public/events/spinco_feb.jpg";
+import techpanel from "@/public/events/techpanel.jpg";
+import spinco_nov from "@/public/events/spinco_nov.jpg";
+import braceletmaking from "@/public/events/braceletmaking.jpg";
+// new events
+import braceletmaking2024 from "@/public/events/bracelet_making_event.png";
+import meet_mentors from "@/public/events/meet_mentors.png";
+import alehouse from "@/public/events/ale_house_event.png";
+import spinco2024 from "@/public/events/spinco_2024.jpeg";
+
 
 const Page = () => {
   return (
@@ -45,7 +50,15 @@ const Page = () => {
           xl:grid xl:grid-cols-3 xl:gap-8"
         >
             <EventBox
-              card={<CardImgPink img={meet_mentors} />}
+              card={<CardImgPink img={spinco2024} />}
+              date={"November 9th, 2024"}
+              name={"QWIC x SpinCo"}
+              info={
+                "SpinCo is back! To secure your spot, sign up via our linktree and e-transfer to finance@qwic.org . We cant wait!"
+              }
+            />
+            <EventBox
+              card={<CardImgBlue img={meet_mentors} />}
               date={"September 23rd, 2024"}
               name={"Meet the Mentors Game Night"}
               info={
@@ -53,7 +66,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgBlue img={braceletmaking2024} />}
+              card={<CardImgPurple img={braceletmaking2024} />}
               date={"September 15, 2024"}
               name={"Bracelet Making"}
               info={
