@@ -65,7 +65,7 @@ const resources = [
   {
     id: "high-school-students",
     component: (
-      <ResourceBoxBlue
+      <ResourceBoxPink
         img={codeorg}
         title={"Code.org"}
         description={
@@ -107,7 +107,7 @@ const resources = [
   {
     id: "incoming-students",
     component: (
-      <ResourceBoxBlue
+      <ResourceBoxPink
         img={sass}
         title={"Student Academic Success Services"}
         description={
@@ -121,7 +121,7 @@ const resources = [
   {
     id: "incoming-students",
     component: (
-      <ResourceBoxPink
+      <ResourceBoxBlue
         img={fourdirections}
         title={"Four Directions Indigenous Student Centre"}
         description={
