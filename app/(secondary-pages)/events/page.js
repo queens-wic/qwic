@@ -5,6 +5,7 @@ import CardImgPurple from "@/components/cards/card-img-purple";
 import EventBox from "./event-box";
 import ButtonPink from "./button-pink";
 import ButtonBlue from "./button-blue";
+import ButtonPurple from "./button-purple";
 
 // old events
 import gitpub from "@/public/events/gitpub.jpg";
@@ -32,11 +33,15 @@ const Page = () => {
         </div>
         <div>
           <div className="flex flex-row justify-start mt-6">
-            <ButtonPink
+          <ButtonPink
+              username={"QWIC Linktree"}
+              link={"https://linktr.ee/qwic"}
+            />
+            <ButtonBlue
               username={"@queenswic"}
               link={"https://www.instagram.com/queenswic/"}
             />
-            <ButtonBlue
+            <ButtonPurple
               username={"@qwic_community"}
               link={"https://www.instagram.com/qwic_community/"}
             />
