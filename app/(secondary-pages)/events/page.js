@@ -23,16 +23,16 @@ import spinco2024 from "@/public/events/spinco_2024.jpeg";
 const Page = () => {
   return (
     <div className="h-fit">
-      <div className="mx-36 pt-10">
+      <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
 
         {/* Title, blobs and buttons to IG, no additional responsive fix necessary */}
         <div className="relative">
-          <h1 className="text-[36px] font-bold">Current Events</h1>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">Current Events</h2>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
         </div>
         <div>
-          <div className="flex flex-row justify-start mt-6">
+        <div className="flex flex-col space-y-4 mt-6 md:flex-row md:space-y-0 md:space-x-4 justify-start">
           <ButtonPink
               username={"QWIC Linktree"}
               link={"https://linktr.ee/qwic"}
@@ -81,8 +81,8 @@ const Page = () => {
         </div>
 
         {/* Previous Events, adjust to flex-cols, with rows of 3 at xl breakpoint (row of 2 at lg breakpint???) */}
-        <hr className="w-full border-t mt-10  border-black my-4" />
-        <h1 className="text-[36px] font-bold mt-10 mb-4">Previous Events</h1>
+        <hr className="w-full border-t my-10 mx-0 border-black" />
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">Previous Events</h2>
 
         <div className="flex flex-col w-full flex-wrap
           lg:flex-row lg:justify-between lg:gap-8 lg:mt-6 lg:mb-10 
