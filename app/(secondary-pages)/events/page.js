@@ -3,8 +3,8 @@ import CardImgBlue from "@/components/cards/card-img-blue";
 import CardImgPink from "@/components/cards/card-img-pink";
 import CardImgPurple from "@/components/cards/card-img-purple";
 import EventBox from "./event-box";
-import IgButtonPink from "./button-pink";
-import IgButtonBlue from "./button-blue";
+import ButtonPink from "./button-pink";
+import ButtonBlue from "./button-blue";
 
 // old events
 import gitpub from "@/public/events/gitpub.jpg";
@@ -16,7 +16,6 @@ import braceletmaking from "@/public/events/braceletmaking.jpg";
 // new events
 import braceletmaking2024 from "@/public/events/bracelet_making_event.png";
 import meet_mentors from "@/public/events/meet_mentors.png";
-import alehouse from "@/public/events/ale_house_event.png";
 import spinco2024 from "@/public/events/spinco_2024.jpeg";
 
 
@@ -33,11 +32,11 @@ const Page = () => {
         </div>
         <div>
           <div className="flex flex-row justify-start mt-6">
-            <IgButtonPink
+            <ButtonPink
               username={"@queenswic"}
               link={"https://www.instagram.com/queenswic/"}
             />
-            <IgButtonBlue
+            <ButtonBlue
               username={"@qwic_community"}
               link={"https://www.instagram.com/qwic_community/"}
             />
