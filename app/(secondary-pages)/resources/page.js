@@ -53,7 +53,7 @@ const resources = [
     component: (
       <ResourceBoxPurple
         img={ywib}
-        title={"Young Women in Business (YWIB)"}
+        title={"Young Women in Business"}
         description={
           "A network that empowers young women through professional development events, mentorship programs, and leadership opportunities."
         }
@@ -95,7 +95,7 @@ const resources = [
     component: (
       <ResourceBoxBlue
         img={sws}
-        title={"Queen's University Student Wellness Services (SWS)"}
+        title={"Student Wellness Services"}
         description={
           "Offers comprehensive health and wellness support, including mental health counseling, medical services, and accessibility services to ensure students thrive academically and personally."
         }
@@ -109,7 +109,7 @@ const resources = [
     component: (
       <ResourceBoxBlue
         img={sass}
-        title={"Student Academic Success Services (SASS)"}
+        title={"Student Academic Success Services"}
         description={
           "Provides academic support through workshops, one-on-one consultations, and resources to help students improve their study skills, writing, and time management."
         }
@@ -192,11 +192,11 @@ const resources = [
 
 const Page = () => {
   return (
-    <div className="min-h-screen h-full mx-36">
+    <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
       {/* Heading */}
       <div className="flex justify-center items-center pt-10">
         <div className="relative w-full">
-          <h1 className="text-[36px] font-bold">Resources</h1>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">Resources</h2>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44 bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44 bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
           <p className="text-secondary-text text-[18px] mt-4">
