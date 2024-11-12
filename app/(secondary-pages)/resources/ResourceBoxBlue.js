@@ -17,11 +17,11 @@ const ResourceBoxBlue = ({ title, description, img, link }) => (
               height={80}
             />
           )}
-          <h2 className="text-[20px] font-semibold flex-grow leading-tight">
+          <h3 className="text-xl sm:text-2xl lg:text-2xl mb-1 sm:mb-2 lg:mb-3">
             {title}
-          </h2>
+          </h3>
         </div>
-        <p className="mt-2 text-[18px] text-secondary-text">{description}</p>
+        <p className="text-base sm:text-lg mb-4 sm:mb-6 lg:mb-8 text-secondary-text">{description}</p>
       </div>
       
       <Link href={link} target="_blank" rel="noopener noreferrer">
@@ -42,3 +42,4 @@ const ResourceBoxBlue = ({ title, description, img, link }) => (
 
 
 export default ResourceBoxBlue;
+
