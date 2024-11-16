@@ -37,8 +37,8 @@ const Page = () => {
 
           {/* Current Events, adjust to flex-cols, with rows of 3 at xl breakpoint (row of 2 at lg breakpint???) */}
         
-        <div className="flex flex-col w-full flex-wrap justify-center
-          lg:flex-row lg:justify-between lg:gap-8 lg:mt-6 lg:mb-10 
+        <div className="flex flex-col w-full flex-wrap justify-between
+          lg:flex-row lg:gap-8 lg:mt-2 lg:mb-10 
           xl:grid xl:grid-cols-3 xl:gap-8"
         >
             <EventBox
@@ -84,8 +84,8 @@ const Page = () => {
         <hr className="w-full border-t my-10 mx-0 border-black" />
         <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">Previous Events</h2>
 
-        <div className="flex flex-col w-full flex-wrap
-          lg:flex-row lg:justify-between lg:gap-8 lg:mt-6 lg:mb-10 
+        <div className="flex flex-col w-full flex-wrap justify-between
+          lg:flex-row lg:gap-8 lg:mt-6 lg:mb-10 
           xl:grid xl:grid-cols-3 xl:gap-8"
         >
           
