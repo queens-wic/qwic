@@ -24,7 +24,7 @@ const Page = () => {
           <ButtonPink
               username={"QWIC Linktree"}
               link={"https://linktr.ee/qwic"}
-            />
+          />
             <ButtonBlue
               username={"@queenswic"}
               link={"https://www.instagram.com/queenswic/"}
@@ -37,32 +37,44 @@ const Page = () => {
 
           {/* Current Events, adjust to flex-cols, with rows of 3 at xl breakpoint (row of 2 at lg breakpint???) */}
         
-        <div className="flex flex-col w-full flex-wrap
+        <div className="flex flex-col w-full flex-wrap justify-center
           lg:flex-row lg:justify-between lg:gap-8 lg:mt-6 lg:mb-10 
           xl:grid xl:grid-cols-3 xl:gap-8"
         >
             <EventBox
-              card={<CardImgPink img="/events/spinco_2024.jpeg"/>}
+              card={<CardImgPink img="/events/fireside_chat.png"/>}
+              date={"November 19th, 2024"} 
+              name={"Women at Microsoft Fireside Chat"}
+              timeplace={"MacCorry D214, 12pm-1pm"}
+              info={
+                "Join us for a panel of female leaders at Microsoft, discussing career growth, resiliency, and empowerment!"
+              }
+            />
+            <EventBox
+              card={<CardImgBlue img="/events/spinco_2024.jpeg"/>}
               date={"November 9th, 2024"}
               name={"QWIC x SpinCo"}
+              timeplace={"SpinCo Kingston, 3pm"}
               info={
                 "SpinCo is back! To secure your spot, sign up via our linktree and e-transfer to finance@qwic.org . We cant wait!"
               }
             />
             <EventBox
-              card={<CardImgBlue img="/events/meet_mentors.png" />}
+              card={<CardImgPurple img="/events/meet_mentors.png" />}
               date={"September 23rd, 2024"}
               name={"Meet the Mentors Game Night"}
+              timeplace={"CasLab, 6-7:30pm"}
               info={
-                "Interested in becoming a mentee in our bits and bytes mentorship program? Join us in CasLab from 6 - 7:30pm to meet the mentors!"
+                "Interested in becoming a mentee in our bits and bytes mentorship program? Join us for a night of games and meet the mentors!"
               }
             />
             <EventBox
               card={<CardImgPurple img="/events/bracelet_making_event.png" />}
               date={"September 15, 2024"}
               name={"Bracelet Making"}
+              timeplace={"MacDonald Park, 12-2pm"}
               info={
-                "Kick off the school year with bracelet making with QWIC! Join us in MacDonald Park from 12 - 2pm near the tube sculpture"
+                "Kick off the school year with bracelet making with QWIC! Join us in MacDonald Park near the tube sculpture."
               }
             />
           </div>
@@ -81,6 +93,7 @@ const Page = () => {
             card={<CardImgPink img="/events/gitpub.jpg" />}
             date={"April 3rd, 2024"}
             name={"GitPub"}
+            timeplace={"DAFT Brewing, 10pm-2am"}
             info={
               "Join us for a night out of dancing and singing at DAFT brewing! Tickets are $15 through the link in our Instagram bio."
             }
@@ -97,6 +110,7 @@ const Page = () => {
             card={<CardImgPurple img="/events/spinco_feb.jpg" />}
             date={"February 11th, 2024"}
             name={"QWIC x SpinCo"}
+            timeplace={"SpinCo Kingston, 1:30pm"}
             info={
               "We had such a blast last semester at spinco that WE HAD to bring it back! Tickets are live in our Instagram bio, get them before they sell out!"
             }
@@ -114,6 +128,7 @@ const Page = () => {
             card={<CardImgBlue img="/events/spinco_nov.jpg" />}
             date={"November 4th, 2023"}
             name={"QWIC x SpinCo"}
+            timeplace={"SpinCo Kingston, 3pm"}
             info={
               "QWIC takes over SpinCo! Going to be super fun with great music and even better vibes. Tickets are $15 through the link in our Instagram bio, get them before they sell out!"
             }
@@ -122,6 +137,7 @@ const Page = () => {
             card={<CardImgPurple img="/events/braceletmaking.jpg" />}
             date={"September 16th, 2023"}
             name={"Bracelet Making"}
+            timeplace={"MacDonald Park, 1-3pm"}
             info={
               "Kick the year off by joining us at MacDonald Park from 1-3pm for some bracelet making! All are welcome, come meet people or bring a friend!"
             }
