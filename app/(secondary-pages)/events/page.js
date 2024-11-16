@@ -7,18 +7,6 @@ import ButtonPink from "./button-pink";
 import ButtonBlue from "./button-blue";
 import ButtonPurple from "./button-purple";
 
-// old events
-import gitpub from "@/public/events/gitpub.jpg";
-import hackher from "@/public/events/hackher.jpg";
-import spinco_feb from "@/public/events/spinco_feb.jpg";
-import techpanel from "@/public/events/techpanel.jpg";
-import spinco_nov from "@/public/events/spinco_nov.jpg";
-import braceletmaking from "@/public/events/braceletmaking.jpg";
-// new events
-import braceletmaking2024 from "@/public/events/bracelet_making_event.png";
-import meet_mentors from "@/public/events/meet_mentors.png";
-import spinco2024 from "@/public/events/spinco_2024.jpeg";
-
 
 const Page = () => {
   return (
@@ -54,7 +42,7 @@ const Page = () => {
           xl:grid xl:grid-cols-3 xl:gap-8"
         >
             <EventBox
-              card={<CardImgPink img={spinco2024} />}
+              card={<CardImgPink img="/events/spinco_2024.jpeg"/>}
               date={"November 9th, 2024"}
               name={"QWIC x SpinCo"}
               info={
@@ -62,7 +50,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgBlue img={meet_mentors} />}
+              card={<CardImgBlue img="/events/meet_mentors.png" />}
               date={"September 23rd, 2024"}
               name={"Meet the Mentors Game Night"}
               info={
@@ -70,7 +58,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgPurple img={braceletmaking2024} />}
+              card={<CardImgPurple img="/events/bracelet_making_event.png" />}
               date={"September 15, 2024"}
               name={"Bracelet Making"}
               info={
@@ -90,7 +78,7 @@ const Page = () => {
         >
           
           <EventBox
-            card={<CardImgPink img={gitpub} />}
+            card={<CardImgPink img="/events/gitpub.jpg" />}
             date={"April 3rd, 2024"}
             name={"GitPub"}
             info={
@@ -98,7 +86,7 @@ const Page = () => {
             }
           />
           <EventBox
-            card={<CardImgBlue img={hackher} />}
+            card={<CardImgBlue img="/events/hackher.jpg"/>}
             date={"March 9-10th, 2024"}
             name={"HackHer"}
             info={
@@ -106,7 +94,7 @@ const Page = () => {
             }
           />
           <EventBox
-            card={<CardImgPurple img={spinco_feb} />}
+            card={<CardImgPurple img="/events/spinco_feb.jpg" />}
             date={"February 11th, 2024"}
             name={"QWIC x SpinCo"}
             info={
@@ -115,7 +103,7 @@ const Page = () => {
           />
 
           <EventBox
-            card={<CardImgPink img={techpanel} />}
+            card={<CardImgPink img="/events/techpanel.jpg" />}
             date={"November 15th, 2023"}
             name={"Technical Internship Panel"}
             info={
@@ -123,7 +111,7 @@ const Page = () => {
             }
           />
           <EventBox
-            card={<CardImgBlue img={spinco_nov} />}
+            card={<CardImgBlue img="/events/spinco_nov.jpg" />}
             date={"November 4th, 2023"}
             name={"QWIC x SpinCo"}
             info={
@@ -131,7 +119,7 @@ const Page = () => {
             }
           />
           <EventBox
-            card={<CardImgPurple img={braceletmaking} />}
+            card={<CardImgPurple img="/events/braceletmaking.jpg" />}
             date={"September 16th, 2023"}
             name={"Bracelet Making"}
             info={
