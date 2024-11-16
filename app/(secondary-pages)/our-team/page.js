@@ -22,6 +22,7 @@ const Page = () => {
           </p>
         </div>
       </div>
+      {/* Profile Images */}
       <div className="mx-36 mt-20">
         <div className="grid grid-cols-3 gap-x-40 gap-y-20">
           {profiles.map((profile, index) => (
