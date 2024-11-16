@@ -176,7 +176,7 @@ const profiles = [
     role: "Mentorship Coordinator",
   },
   {
-    src: "/profile-pics/lauren.jpg",
+    src: "/new-profile/lauren.jpg",
     alt: "Lauren Lidhar, Mentorship Coordinator",
     name: "Lauren Lidhar",
     role: "Mentorship Coordinator",
