@@ -7,24 +7,24 @@ import ButtonPink from "./button-pink";
 import ButtonBlue from "./button-blue";
 import ButtonPurple from "./button-purple";
 
-
 const Page = () => {
   return (
     <div className="h-fit">
       <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
-
         {/* Title, blobs and buttons to IG, no additional responsive fix necessary */}
         <div className="relative">
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">Current Events</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">
+            Current Events
+          </h2>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
         </div>
         <div>
-        <div className="flex flex-col space-y-4 mt-6 md:flex-row md:space-y-0 md:space-x-4 justify-start">
-          <ButtonPink
+          <div className="flex flex-col space-y-4 mt-6 md:flex-row md:space-y-0 md:space-x-4 justify-start">
+            <ButtonPink
               username={"QWIC Linktree"}
               link={"https://linktr.ee/qwic"}
-          />
+            />
             <ButtonBlue
               username={"@queenswic"}
               link={"https://www.instagram.com/queenswic/"}
@@ -36,14 +36,15 @@ const Page = () => {
           </div>
 
           {/* Current Events, adjust to flex-cols, with rows of 3 at xl breakpoint (row of 2 at lg breakpint???) */}
-        
-        <div className="flex flex-col w-full flex-wrap justify-between
+
+          <div
+            className="flex flex-col w-full flex-wrap justify-between
           lg:flex-row lg:gap-8 lg:mt-2 lg:mb-10 
           xl:grid xl:grid-cols-3 xl:gap-8"
-        >
+          >
             <EventBox
-              card={<CardImgPink img="/events/fireside_chat.png"/>}
-              date={"November 19th, 2024"} 
+              card={<CardImgPink img="/events/fireside_chat.png" />}
+              date={"November 19th, 2024"}
               name={"Women at Microsoft Fireside Chat"}
               timeplace={"MacCorry D214, 12pm-1pm"}
               info={
@@ -51,7 +52,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgBlue img="/events/spinco_2024.jpeg"/>}
+              card={<CardImgBlue img="/events/spinco_2024.jpeg" />}
               date={"November 9th, 2024"}
               name={"QWIC x SpinCo"}
               timeplace={"SpinCo Kingston, 3pm"}
@@ -82,13 +83,15 @@ const Page = () => {
 
         {/* Previous Events, adjust to flex-cols, with rows of 3 at xl breakpoint (row of 2 at lg breakpint???) */}
         <hr className="w-full border-t my-10 mx-0 border-black" />
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">Previous Events</h2>
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">
+          Previous Events
+        </h2>
 
-        <div className="flex flex-col w-full flex-wrap justify-between
+        <div
+          className="flex flex-col w-full flex-wrap justify-between
           lg:flex-row lg:gap-8 lg:mt-6 lg:mb-10 
           xl:grid xl:grid-cols-3 xl:gap-8"
         >
-          
           <EventBox
             card={<CardImgPink img="/events/gitpub.jpg" />}
             date={"April 3rd, 2024"}
@@ -99,7 +102,7 @@ const Page = () => {
             }
           />
           <EventBox
-            card={<CardImgBlue img="/events/hackher.jpg"/>}
+            card={<CardImgBlue img="/events/hackher.jpg" />}
             date={"March 9-10th, 2024"}
             name={"HackHer"}
             info={
