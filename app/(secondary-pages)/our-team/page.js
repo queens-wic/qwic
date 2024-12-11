@@ -1,12 +1,39 @@
+"use client";
 import React from "react";
-import CardImgBlue from "@/components/cards/card-img-blue";
+import { useState } from "react";
 import CardImgPink from "@/components/cards/card-img-pink";
-import CardImgPurple from "@/components/cards/card-img-purple";
 import MemberProfile from "./member-profile";
+import Filter from "@/components/filter-bar";
 
-import profiles from "@/app/(secondary-pages)/our-team/members.js";
+import members from "@/app/(secondary-pages)/our-team/members.js";
 
-const Page = () => {
+export default function Home() {
+  const [activeTag, setActiveTag] = useState("All");
+  let tagList = [
+    "All",
+    "Community",
+    "HackHer",
+    "Marketing",
+    "Mentorship",
+    "Operations",
+  ];
+
+  const handleTag = (tag) => {
+    setActiveTag(tag);
+  };
+
+  const filterTags = (array) => {
+    if (activeTag.toLowerCase() == "all") {
+      return array;
+    } else {
+      return array.filter(
+        (el) => el.category.toLocaleLowerCase() == activeTag.toLocaleLowerCase()
+      );
+    }
+  };
+
+  let filteredList = filterTags(members);
+
   return (
     <div>
       <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
@@ -18,19 +45,33 @@ const Page = () => {
           <div className="z-10 absolute right-10 w-44 h-44 bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
           <p className="text-base sm:text-lg mb-4 sm:mb-6 lg:mb-8 text-secondary-text">
             QWIC is a community for all women, underrepresented minorities, and
-            anyone who is passionate about technology and shares the same values of
-            equality.
+            anyone who is passionate about technology and shares the same values
+            of equality.
           </p>
+          <Filter
+            tagList={tagList}
+            activeTag={activeTag}
+            handleTag={handleTag}
+          />
+          {/* TODO add code for filterList.map render all relevant images */}
+          {/* {filteredList.map((el, i) => (
+            <div
+              className="w-full border-[1px] border-gray-500 px-2 rounded-xl py-4"
+              key={i}
+            >
+              {el.name}
+            </div>
+          ))} */}
         </div>
 
-      {/* Responsive grid for team profiles */}
+        {/* Responsive grid for team profiles */}
         <div className="grid grid-cols-1 mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 lg:gap-x-12">
-          {profiles.map((profile, index) => (
+          {members.map((member, index) => (
             <div key={index}>
               <MemberProfile
-                card={<CardImgPink img={profile.src} />}
-                name={profile.name}
-                role={profile.role}
+                card={<CardImgPink img={members.src} />}
+                name={members.name}
+                role={members.role}
               />
             </div>
           ))}
@@ -39,7 +80,4 @@ const Page = () => {
       <div className="h-40"></div>
     </div>
   );
-};
-
-export default Page;
-
+}
