@@ -11,6 +11,7 @@ export default function Home() {
   const [activeTag, setActiveTag] = useState("All");
   let tagList = [
     "All",
+    "Co-Chair",
     "Community",
     "HackHer",
     "Marketing",
@@ -27,7 +28,8 @@ export default function Home() {
       return array;
     } else {
       return array.filter(
-        (el) => el.category.toLocaleLowerCase() == activeTag.toLocaleLowerCase()
+        (el) =>
+          el.portfolio.toLocaleLowerCase() == activeTag.toLocaleLowerCase()
       );
     }
   };
@@ -53,25 +55,16 @@ export default function Home() {
             activeTag={activeTag}
             handleTag={handleTag}
           />
-          {/* TODO add code for filterList.map render all relevant images */}
-          {/* {filteredList.map((el, i) => (
-            <div
-              className="w-full border-[1px] border-gray-500 px-2 rounded-xl py-4"
-              key={i}
-            >
-              {el.name}
-            </div>
-          ))} */}
         </div>
 
-        {/* Responsive grid for team profiles */}
+        {/* Responsive grid for filtered team profiles */}
         <div className="grid grid-cols-1 mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 lg:gap-x-12">
-          {members.map((member, index) => (
+          {filteredList.map((member, index) => (
             <div key={index}>
               <MemberProfile
-                card={<CardImgPink img={members.src} />}
-                name={members.name}
-                role={members.role}
+                card={<CardImgPink img={member.src} />}
+                name={member.name}
+                role={member.role}
               />
             </div>
           ))}
