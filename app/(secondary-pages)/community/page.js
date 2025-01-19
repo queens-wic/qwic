@@ -1,5 +1,5 @@
 import React from "react";
-import Wip from "@/components/Wip";
+import Slider from "@/components/slider";
 
 const page = () => {
   return (
@@ -20,7 +20,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Wip />
+      <Slider/>
     </div>
   );
 };
