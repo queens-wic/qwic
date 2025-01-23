@@ -208,7 +208,7 @@ const Page = () => {
   return (
     <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
       {/* Heading */}
-      <div className="flex flex-col justify-center items-center pt-10">
+      <div className="flex flex-col pt-10">
         <div className="relative w-full">
           <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">
             Resources
@@ -220,7 +220,13 @@ const Page = () => {
             community, for incoming and high school students.
           </p>
         </div>
-        <Filter tagList={tagList} activeTag={activeTag} handleTag={handleTag} />
+        <div className="w-1/2 pt-10">
+          <Filter
+            tagList={tagList}
+            activeTag={activeTag}
+            handleTag={handleTag}
+          />
+        </div>
       </div>
 
       {/* Resource grid */}
