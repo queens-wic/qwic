@@ -6,14 +6,14 @@ const profiles = [
     alt: "Maria Kobilaski, Co-Chair",
     name: "Maria Kobilaski",
     role: "Co-Chair",
-    portfolio: "Co-Chair",
+    portfolio: "Co-Chairs",
   },
   {
     src: "/profile-pics/jade.jpg",
     alt: "Jade Warren, Co-Chair",
     name: "Jade Warren",
     role: "Co-Chair",
-    portfolio: "Co-Chair",
+    portfolio: "Co-Chairs",
   },
   {
     src: "/profile-pics/pheobe.jpg",

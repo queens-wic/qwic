@@ -7,11 +7,11 @@ import Filter from "@/components/filter-bar";
 
 import members from "@/app/(secondary-pages)/our-team/members.js";
 
-export default function Home() {
+export default function OurTeam() {
   const [activeTag, setActiveTag] = useState("All");
   let tagList = [
     "All",
-    "Co-Chair",
+    "Co-Chairs",
     "Community",
     "HackHer",
     "Marketing",
