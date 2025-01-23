@@ -187,22 +187,23 @@ const Page = () => {
     setActiveTag(tag);
   };
 
+  // Define filterTags within the component
   const filterTags = (array) => {
     if (activeTag.toLowerCase() === "all") {
       return array;
     } else {
-      return array.filter(
-        (el) => el.id.toLowerCase() === activeTag.toLowerCase()
-      );
+      const normalizedTag = activeTag.toLowerCase().replace(/ /g, "-"); // Convert spaces to dashes
+      return array.filter((el) => el.id.toLowerCase() === normalizedTag);
     }
   };
 
+  // Filter and sort resources
   const filteredResources = filterTags(resources)
     .map((resource) => ({
       ...resource,
-      title: resource.component.props.title, // Extract the title for sorting
+      title: resource.component.props.title, // Extract title for sorting
     }))
-    .sort((a, b) => a.title.localeCompare(b.title)); // Sort alphabetically by title
+    .sort((a, b) => a.title.localeCompare(b.title));
 
   return (
     <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
