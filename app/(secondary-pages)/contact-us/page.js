@@ -1,6 +1,6 @@
 import React from "react";
-import Wip from "@/components/Wip";
-const page = () => {
+
+export default function ContactUs() {
   return (
     <div>
       {/* Heading */}
@@ -21,9 +21,6 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Wip />
     </div>
   );
-};
-
-export default page;
+}
