@@ -220,7 +220,7 @@ const Page = () => {
             community, for incoming and high school students.
           </p>
         </div>
-        <div className="w-1/2 pt-10">
+        <div className="w-1/2 mt-20">
           <Filter
             tagList={tagList}
             activeTag={activeTag}
