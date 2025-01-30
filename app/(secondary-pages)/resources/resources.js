@@ -1,12 +1,5 @@
-"use client"; // Add this line to mark the component as a Client Component
-
-import React from "react";
-import ResourceBoxBlue from "./ResourceBoxBlue";
-import ResourceBoxPink from "./ResourceBoxPink";
-import ResourceBoxPurple from "./ResourceBoxPurple";
-import { useState } from "react";
-import Filter from "@/components/filter-bar";
-
+// temporary hard coded data
+// array with each resource is an object with an id and component
 const resources = [
   {
     id: "high-school-students",
@@ -51,7 +44,7 @@ const resources = [
     ),
   },
   {
-    id: "all",
+    id: "",
     component: (
       <ResourceBoxPink
         img="/assets/codeorg.png"
@@ -178,73 +171,4 @@ const resources = [
   },
 ];
 
-const Page = () => {
-  const [activeTag, setActiveTag] = useState("All");
-
-  const tagList = ["All", "High School Students", "Incoming Students"];
-
-  const handleTag = (tag) => {
-    setActiveTag(tag);
-  };
-
-  // Define filterTags within the component
-  const filterTags = (array) => {
-    if (activeTag.toLowerCase() === "all") {
-      return array;
-    } else {
-      const normalizedTag = activeTag.toLowerCase().replace(/ /g, "-"); // Convert spaces to dashes
-      return array.filter((el) => el.id.toLowerCase() === normalizedTag);
-    }
-  };
-
-  // Filter and sort resources
-  const filteredResources = filterTags(resources)
-    .map((resource) => ({
-      ...resource,
-      title: resource.component.props.title, // Extract title for sorting
-    }))
-    .sort((a, b) => a.title.localeCompare(b.title));
-
-  return (
-    <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
-      {/* Heading */}
-      <div className="flex flex-col pt-10">
-        <div className="relative w-full">
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">
-            Resources
-          </h2>
-          <div className="z-10 absolute top-0 -left-10 w-44 h-44 bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
-          <div className="z-10 absolute right-10 w-44 h-44 bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
-          <p className="text-secondary-text text-[18px] mt-4">
-            Resources focused on academics, mental health, and finding
-            community, for incoming and high school students.
-          </p>
-        </div>
-        <div className="w-1/2 mt-20">
-          <Filter
-            tagList={tagList}
-            activeTag={activeTag}
-            handleTag={handleTag}
-          />
-        </div>
-      </div>
-
-      {/* Resource grid */}
-      <div className="mt-16">
-        <div
-          className="flex flex-col w-full flex-wrap gap-20
-        lg:flex-row lg:justify-between lg:mt-10 lg:mb-10 
-        xl:grid xl:grid-cols-3 xl:mt-10 xl:mb-10"
-        >
-          {filteredResources.map((resource, index) => (
-            <React.Fragment key={index}>{resource.component}</React.Fragment>
-          ))}
-        </div>
-
-        <div className="h-40" />
-      </div>
-    </div>
-  );
-};
-
-export default Page;
+export default resources;
