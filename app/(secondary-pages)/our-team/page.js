@@ -1,4 +1,4 @@
-// our team
+// our team page
 "use client";
 import React from "react";
 import { useState } from "react";
@@ -62,7 +62,7 @@ export default function OurTeam() {
           />
         </div>
         {/* Responsive grid for filtered team profiles */}
-        <div className="grid grid-cols-1 mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 lg:gap-x-12">
+        <div className="grid grid-cols-1 mt-14 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 lg:gap-x-12">
           {filteredList.map((member, index) => (
             <div key={index}>
               <MemberProfile
