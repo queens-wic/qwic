@@ -14,8 +14,8 @@ export default function Wip() {
         <h1 className="lg:text-3xl md:text-2xl text-xl text-center mt-5">
           Sorry, this page is currently under construction!
         </h1>
-        <p className="md:text-md text-sm text-[#a8afb5] pb-5">
-          Content is coming soon :))
+        <p className="md:text-md text-sm text-[#a8afb5] pb-5 pt-5">
+          More content is coming soon :))
         </p>
       </div>
     </div>

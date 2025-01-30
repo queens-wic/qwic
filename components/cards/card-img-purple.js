@@ -7,6 +7,8 @@ const CardImgPurple = ({ img }) => (
       <Image
         src={img}
         alt="Card Image"
+        width={300}
+        height={300}
         className="object-cover w-full h-full"
       />
     </div>
