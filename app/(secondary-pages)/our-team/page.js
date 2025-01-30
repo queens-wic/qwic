@@ -1,4 +1,3 @@
-// our team page
 "use client";
 import React from "react";
 import { useState } from "react";
@@ -25,12 +24,12 @@ export default function OurTeam() {
   };
 
   const filterTags = (array) => {
-    if (activeTag.toLowerCase() == "all") {
+    if (activeTag.toLowerCase() === "all") {
       return array;
     } else {
       return array.filter(
         (el) =>
-          el.portfolio.toLocaleLowerCase() == activeTag.toLocaleLowerCase()
+          el?.portfolio?.toLocaleLowerCase() === activeTag.toLocaleLowerCase()
       );
     }
   };
