@@ -5,7 +5,7 @@ import ResourceBoxBlue from "./ResourceBoxBlue";
 import ResourceBoxPink from "./ResourceBoxPink";
 import ResourceBoxPurple from "./ResourceBoxPurple";
 import { useState } from "react";
-import Filter from "@/components/filter-bar";
+import FilterResources from "./FilterResources";
 
 const resources = [
   {
@@ -220,8 +220,8 @@ const Page = () => {
             community, for incoming and high school students.
           </p>
         </div>
-        <div className="w-1/2 mt-20">
-          <Filter
+        <div className="mt-20">
+          <FilterResources
             tagList={tagList}
             activeTag={activeTag}
             handleTag={handleTag}
@@ -230,19 +230,14 @@ const Page = () => {
       </div>
 
       {/* Resource grid */}
-      <div className="mt-16">
-        <div
-          className="flex flex-col w-full flex-wrap gap-20
-        lg:flex-row lg:justify-between lg:mt-10 lg:mb-10 
-        xl:grid xl:grid-cols-3 xl:mt-10 xl:mb-10"
-        >
+      <div className="flex w-full justify-center xl:justify-between">
+        <div className="grid grid-cols-1 mt-14 md:grid-cols-2 md:gap-x-24 md:gap-y-20 xl:grid-cols-3 gap-x-10 gap-y-16">
           {filteredResources.map((resource, index) => (
             <React.Fragment key={index}>{resource.component}</React.Fragment>
           ))}
         </div>
-
-        <div className="h-40" />
       </div>
+      <div className="h-40" />
     </div>
   );
 };

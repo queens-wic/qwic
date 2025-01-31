@@ -1,8 +1,11 @@
 import React from "react";
 
-function Filter({ activeTag, handleTag, tagList }) {
+// made a diff filter bar for resources due to justification difference between our team and resources page
+// Resources has 3 filters and Our Team has 7 filters
+
+function FilterResources({ activeTag, handleTag, tagList }) {
   return (
-    <div className="w-full flex flex-wrap gap-2 justify-center lg:justify-between overflow-auto">
+    <div className="w-full flex flex-wrap gap-10 justify-center md:justify-start overflow-auto">
       {tagList.map((tag, i) => (
         <div
           onClick={() => handleTag(tag)}
@@ -19,4 +22,4 @@ function Filter({ activeTag, handleTag, tagList }) {
   );
 }
 
-export default Filter;
+export default FilterResources;
