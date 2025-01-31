@@ -62,18 +62,16 @@ export default function OurTeam() {
           />
         </div>
         {/* Responsive grid for filtered team profiles */}
-        <div className="flex w-full justify-center xl:justify-between">
-          <div className="grid grid-cols-1 mt-14 sm:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-10 xl:gap-x-12">
-            {filteredList.map((member, index) => (
-              <div key={index}>
-                <MemberProfile
-                  card={<CardImgPink img={member.src} />}
-                  name={member.name}
-                  role={member.role}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 mt-14 sm:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-10 xl:gap-x-14 place-items-center">
+          {filteredList.map((member, index) => (
+            <div key={index} className="w-full">
+              <MemberProfile
+                card={<CardImgPink img={member.src} />}
+                name={member.name}
+                role={member.role}
+              />
+            </div>
+          ))}
         </div>
       </div>
       <div className="h-40"></div>
