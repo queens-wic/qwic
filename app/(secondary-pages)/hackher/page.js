@@ -14,8 +14,8 @@ const page = () => {
   return (
     <div>
       {/* Heading */}
-      <heading className="flex justify-center items-center pt-10 mx-36 mb-40">
-        <div className="relative">
+      <heading className="flex justify-center items-center mb-40">
+        <div className="relative pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
           <h1 className="text-[36px] font-bold">HackHer Hackathon</h1>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
