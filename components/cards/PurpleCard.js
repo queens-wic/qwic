@@ -10,11 +10,11 @@ const PurpleCard = ({ title, desc, cta, link, img }) => {
       <div className="relative flex flex-col h-full border border-black bg-light-purple justify-between rounded-2xl p-6 z-10 w-full">
         <div className="flex flex-col justify-center my-auto">
           {img && (
-            <div className="relative w-[110px] h-[90px] flex items-center justify-center">
+            <div className="relative w-[90px] h-[90px] flex items-center justify-center">
               <Image
                 src={img}
                 alt="Card Image"
-                className="pb-2"
+                className="py-2"
                 layout="fill"
                 objectFit="contain"
               />
