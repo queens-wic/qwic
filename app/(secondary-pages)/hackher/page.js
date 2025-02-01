@@ -70,6 +70,13 @@ const page = () => {
               img={"/assets/guestSpeaker.png"}
             />
           </div>
+          <div className="mt-20">
+            <h1 className="text-[36px] font-bold">HackHer Prep Workshop</h1>
+            <p className="text-secondary-text text-[18px] font-black mt-4">
+              New to hackathons or want to sharpen your skills? Join us and QWeb
+              for a prep workshop on March 1st! (Details coming soon.)
+            </p>
+          </div>
         </div>
       </heading>
     </div>
