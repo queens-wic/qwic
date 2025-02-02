@@ -42,7 +42,7 @@ const page = () => {
             <div className="flex items-center gap-5 mt-4">
               <FontAwesomeIcon icon={faCalendarCheck} className="size-10" />
               <p className="text-secondary-text text-[18px] font-black">
-                Applications open February 1st, 2025
+                Applications open February 1st, 2025, close March 2nd 2025
               </p>
             </div>
             <div className="flex items-center gap-5 mt-4"></div>
