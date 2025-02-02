@@ -43,6 +43,20 @@ const Page = () => {
           xl:grid xl:grid-cols-3 xl:gap-8"
           >
             <EventBox
+              card={<CardImgPink img="/events/hackher_event.png" />}
+              date={"March 8th - March 9th, 2025"}
+              name={"HackHer Hackathon"}
+              timeplace={"Queen's University, hybrid"}
+              info={"Add caption..."}
+            />
+            <EventBox
+              card={<CardImgPink img="/events/karaoke.png" />}
+              date={"February 4th, 2025"}
+              name={"QWIC x COMPSA Karaoke"}
+              timeplace={"The Mansion"}
+              info={"Add caption..."}
+            />
+            <EventBox
               card={<CardImgPink img="/events/fireside_chat.png" />}
               date={"November 19th, 2024"}
               name={"Women at Microsoft Fireside Chat"}
