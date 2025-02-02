@@ -53,29 +53,50 @@ const page = () => {
               desc="Code with us in person at Queen’s University for food, workshops, presentations, games, and more! Prizes await the winners. Can’t make it in person? No worries— participate online."
               cta="More"
               link="https://docs.google.com/forms/d/e/1FAIpQLSf_HAKRnhIi5ZgGeg_nuWXRpO_tB_ZkYmX-jsSWV_2AR08dzA/viewform"
-              img={"/assets/location.png"}
+              img={"/hackher/location.png"}
             />
             <BlueCard
               title="Beginner Friendly"
               desc="No coding experience required! This is a great opportunity to learn, collaborate, and network with students, professors, and industry professionals."
               cta="More"
               link="https://docs.google.com/forms/d/e/1FAIpQLSf_HAKRnhIi5ZgGeg_nuWXRpO_tB_ZkYmX-jsSWV_2AR08dzA/viewform"
-              img={"/assets/beginnerFriendly.png"}
+              img={"/hackher/beginnerFriendly.png"}
             />
             <PurpleCard
               title="Guest Speakers"
               desc="Industry leaders from Amazon, Microsoft, Ericsson, Intermap, Incognito, and Datadog will share their expertise."
               cta="More"
               link="https://docs.google.com/forms/d/e/1FAIpQLSf_HAKRnhIi5ZgGeg_nuWXRpO_tB_ZkYmX-jsSWV_2AR08dzA/viewform"
-              img={"/assets/guestSpeaker.png"}
+              img={"/hackher/guestSpeaker.png"}
             />
           </div>
-          <div className="mt-20">
+          <div className="my-20">
             <h1 className="text-[36px] font-bold">HackHer Prep Workshop</h1>
-            <p className="text-secondary-text text-[18px] font-black mt-4">
+            <p className="text-secondary-text text-[18px] font-black">
               New to hackathons or want to sharpen your skills? Join us and QWeb
               for a prep workshop on March 1st! (Details coming soon.)
             </p>
+          </div>
+          <div className="self-center p-2">
+            {/* For medium screens and larger */}
+            <div className="hidden xl:block">
+              <Image
+                src="/hackher/hackher_big.png"
+                width={1500}
+                height={900}
+                alt="Collage of QWIC team pictures"
+              />
+            </div>
+
+            {/* For smaller screens */}
+            <div className="block xl:hidden">
+              <Image
+                src="/hackher/hackher_small.png"
+                width={900}
+                height={500}
+                alt="Collage of QWIC team pictures - smaller version"
+              />
+            </div>
           </div>
         </div>
       </heading>
