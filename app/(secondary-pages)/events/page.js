@@ -47,14 +47,18 @@ const Page = () => {
               date={"March 8th - March 9th, 2025"}
               name={"HackHer Hackathon"}
               timeplace={"Queen's University, hybrid"}
-              info={"Add caption..."}
+              info={
+                "Hackher appiclations are open! Go to the Hackher page or our LinkTree to access the application form. Keep an eye out for pre-hackathon events!"
+              }
             />
             <EventBox
               card={<CardImgPink img="/events/karaoke.png" />}
               date={"February 4th, 2025"}
               name={"QWIC x COMPSA Karaoke"}
               timeplace={"The Mansion"}
-              info={"Add caption..."}
+              info={
+                "Gather for a night out at The Mansion (19+ Venue). Perform to your hearts content or just hang out, all are welcome! RSVP on the form in our LinkTree, FREE ENTRY!"
+              }
             />
             <EventBox
               card={<CardImgPink img="/events/fireside_chat.png" />}
