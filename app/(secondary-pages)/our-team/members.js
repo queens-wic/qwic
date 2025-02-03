@@ -48,6 +48,7 @@ const profiles = [
     alt: "Sophia Wang, First-Year Community Representative",
     name: "Sophia Wang",
     role: "First-Year Community Representative",
+    portfolio: "Community",
   },
   {
     src: "/team-photos-2024/ReneeKim.jpg",
@@ -96,12 +97,14 @@ const profiles = [
     alt: "Hargun Kour, First-Year Web Developer Representative",
     name: "Hargun Kour",
     role: "First-Year Web Developer Representative",
+    portfolio: "Marketing",
   },
   {
     src: "/team-photos-2024/KarinaQiu.jpg",
     alt: "Karina Qiu, First-Year Marketing Representative",
     name: "Karina Qiu",
     role: "First-Year Marketing Representative",
+    portfolio: "Marketing",
   },
   {
     src: "/team-photos-2024/LiaSilver.jpg",
@@ -136,6 +139,7 @@ const profiles = [
     alt: "Jeshna Kanduri, First-Year Operations Representative",
     name: "Jeshna Kanduri",
     role: "First-Year Operations Representative",
+    portfolio: "Operations",
   },
   {
     src: "/team-photos-2024/SariPagurekvanMossel.jpg",
@@ -170,12 +174,14 @@ const profiles = [
     alt: "Mona Ayoub, First-Year HackHer Representative",
     name: "Mona Ayoub",
     role: "First-Year HackHer Representative",
+    portfolio: "HackHer",
   },
   {
     src: "/team-photos-2024/NaveiniVasikaran.jpg",
     alt: "Naveini Vasikaran, First-Year HackHer Representative",
     name: "Naveini Vasikaran",
     role: "First-Year HackHer Representative",
+    portfolio: "HackHer",
   },
   {
     src: "/team-photos-2024/BethArmstrong.jpg",
@@ -210,6 +216,7 @@ const profiles = [
     alt: "Jasmin Qin, First-Year Mentorship Coordinator",
     name: "Jasmine Qin",
     role: "First-Year Mentorship Coordinator",
+    portfolio: "Mentorship",
   },
 ];
 
