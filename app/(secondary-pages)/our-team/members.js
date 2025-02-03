@@ -156,7 +156,7 @@ const profiles = [
     portfolio: "HackHer",
   },
   {
-    src: "/team-photos-2024/RénaHajjar.jpg",
+    src: "/team-photos-2024/RenaHajjar.jpg",
     alt: "Réna Hajjar, HackHer Coordinator",
     name: "Réna Hajjar",
     role: "HackHer Coordinator",
