@@ -212,6 +212,13 @@ const profiles = [
     portfolio: "Mentorship",
   },
   {
+    src: "/team-photos-2024/EmmaHeffernan.jpg",
+    alt: "Emma Heffernan, Mentorship Coordinator",
+    name: "Emma Heffernan",
+    role: "Mentorship Coordinator",
+    portfolio: "Mentorship",
+  },
+  {
     src: "/team-photos-2024/JasmineQin.jpg",
     alt: "Jasmin Qin, First-Year Mentorship Coordinator",
     name: "Jasmine Qin",
