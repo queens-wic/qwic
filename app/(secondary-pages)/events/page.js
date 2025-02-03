@@ -43,6 +43,24 @@ const Page = () => {
           xl:grid xl:grid-cols-3 xl:gap-8"
           >
             <EventBox
+              card={<CardImgPink img="/events/hackher_event.png" />}
+              date={"March 8th - March 9th, 2025"}
+              name={"HackHer Hackathon"}
+              timeplace={"Queen's University, hybrid"}
+              info={
+                "Hackher appiclations are open! Go to the Hackher page or our LinkTree to access the application form. Keep an eye out for pre-hackathon events!"
+              }
+            />
+            <EventBox
+              card={<CardImgPink img="/events/karaoke.png" />}
+              date={"February 4th, 2025"}
+              name={"QWIC x COMPSA Karaoke"}
+              timeplace={"The Mansion"}
+              info={
+                "Gather for a night out at The Mansion (19+ Venue). Perform to your hearts content or just hang out, all are welcome! RSVP on the form in our LinkTree, FREE ENTRY!"
+              }
+            />
+            <EventBox
               card={<CardImgPink img="/events/fireside_chat.png" />}
               date={"November 19th, 2024"}
               name={"Women at Microsoft Fireside Chat"}
