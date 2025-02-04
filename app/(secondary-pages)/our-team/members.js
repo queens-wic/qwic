@@ -156,7 +156,7 @@ const profiles = [
     portfolio: "HackHer",
   },
   {
-    src: "/team-photos-2024/RénaHajjar.jpg",
+    src: "/team-photos-2024/RenaHajjar.jpg",
     alt: "Réna Hajjar, HackHer Coordinator",
     name: "Réna Hajjar",
     role: "HackHer Coordinator",
@@ -208,6 +208,13 @@ const profiles = [
     src: "/team-photos-2024/lauren.jpg",
     alt: "Lauren Lidhar, Mentorship Coordinator",
     name: "Lauren Lidhar",
+    role: "Mentorship Coordinator",
+    portfolio: "Mentorship",
+  },
+  {
+    src: "/team-photos-2024/EmmaHeffernan.jpg",
+    alt: "Emma Heffernan, Mentorship Coordinator",
+    name: "Emma Heffernan",
     role: "Mentorship Coordinator",
     portfolio: "Mentorship",
   },
