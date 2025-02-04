@@ -86,6 +86,15 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  href="/sponsorships"
+                  className="hover:text-dark-purple text-xl py-4"
+                  onClick={() => setIsNavOpen(!isNavOpen)}
+                >
+                  Sponsorships
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/resources"
                   className="hover:text-dark-purple text-xl py-4"
                   onClick={() => setIsNavOpen(!isNavOpen)}
@@ -129,31 +138,6 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </li>
-              {/* <li className="pb-6 text-xl  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                <Link href="#about" onClick={() => setIsNavOpen(!isNavOpen)}>
-                  Home
-                </Link>
-              </li>
-              <li className="pb-6 text-xl  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                <Link href="#about" onClick={() => setIsNavOpen(!isNavOpen)}>
-                  About
-                </Link>
-              </li>
-              <li className="pb-6 text-xl  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                <Link href="#blog" onClick={() => setIsNavOpen(!isNavOpen)}>
-                  Blogs
-                </Link>
-              </li>
-              <li className="pb-6 text-xl py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                <Link href="#contact" onClick={() => setIsNavOpen(!isNavOpen)}>
-                  Contact
-                </Link>
-              </li>
-              <li className="pb-6 text-xl  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                <Link href="#projects" onClick={() => setIsNavOpen(!isNavOpen)}>
-                  Projects
-                </Link>
-              </li> */}
             </ul>
           </div>
         </section>
@@ -168,6 +152,11 @@ const Navbar = () => {
             <li>
               <Link href="/hackher" className="hover:text-dark-purple">
                 HackHer
+              </Link>
+            </li>
+            <li>
+              <Link href="/sponsorships" className="hover:text-dark-purple">
+                Sponsorships
               </Link>
             </li>
             <li>
