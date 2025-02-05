@@ -3,9 +3,9 @@ import Slider from "@/components/slider";
 
 const page = () => {
   return (
-    <div>
+    <div className="h-fit">
       {/* Heading */}
-      <div className="flex justify-center items-center pt-10 mx-36">
+      <div className="xl:h-screen flex flex-col justify-center items-center pt-10 mx-36 ">
         <div className="relative">
           <h1 className="text-[36px] font-bold">Community</h1>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
@@ -17,10 +17,12 @@ const page = () => {
             touch with each other. When you join the QWIC Community, you'll be
             admitted into our tight knit private Instagram, to meet and have fun
             with amazing mentors and peers.
-          </p>
+          </p> 
+          
         </div>
+        <div><Slider/></div>
+        
       </div>
-      <Slider/>
     </div>
   );
 };
