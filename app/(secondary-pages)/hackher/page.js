@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDays,
@@ -52,30 +53,44 @@ const page = () => {
               title="Location"
               desc="Code with us in person at Queen’s University for food, workshops, presentations, games, and more! Prizes await the winners. Can’t make it in person? No worries— participate online."
               cta="More"
-              link="https://docs.google.com/forms/d/e/1FAIpQLSf_HAKRnhIi5ZgGeg_nuWXRpO_tB_ZkYmX-jsSWV_2AR08dzA/viewform"
+              link="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
               img={"/hackher/location.png"}
             />
             <BlueCard
               title="Beginner Friendly"
               desc="No coding experience required! This is a great opportunity to learn, collaborate, and network with students, professors, and industry professionals."
               cta="More"
-              link="https://docs.google.com/forms/d/e/1FAIpQLSf_HAKRnhIi5ZgGeg_nuWXRpO_tB_ZkYmX-jsSWV_2AR08dzA/viewform"
+              link="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
               img={"/hackher/beginnerFriendly.png"}
             />
             <PurpleCard
               title="Guest Speakers"
               desc="Industry leaders from Amazon, Microsoft, Ericsson, Intermap, Incognito, and Datadog will share their expertise."
               cta="More"
-              link="https://docs.google.com/forms/d/e/1FAIpQLSf_HAKRnhIi5ZgGeg_nuWXRpO_tB_ZkYmX-jsSWV_2AR08dzA/viewform"
+              link="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
               img={"/hackher/guestSpeaker.png"}
             />
           </div>
           <div className="my-20">
             <h1 className="text-[36px] font-bold">HackHer Prep Workshop</h1>
             <p className="text-secondary-text text-[18px] font-black">
-              New to hackathons or want to sharpen your skills? Join us and QWeb
-              for a prep workshop on March 1st! (Details coming soon.)
+              New to hackathons or want to sharpen your skills? Join us, QWeb,
+              and QTMA for a prep workshop on March 1st! We will cover:
             </p>
+            <ul className=" list-disc mt-2 ms-4 space-y-1 text-secondary-text text-[18px] font-black">
+              <li>Intro to Git, HTML & CSS with QWIC</li>
+              <li>Learn React.js and how to set up a backend with QWEB</li>
+              <li>
+                Polish off your project with an amazing demo and presentation
+                with QTMA
+              </li>
+            </ul>
+            <Link
+              href="/events"
+              className="text-secondary-text text-[18px] underline font-black flex items-center gap-1 mt-2 hover:text-primary"
+            >
+              Find out more details on our events page
+            </Link>
           </div>
           <div className="self-center p-2">
             {/* For medium screens and larger */}
