@@ -34,27 +34,36 @@ const page = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <section className="mt-14 mb-20 flex flex-col items-center md:flex-row gap-x-64 w-2/3">
-              <CardImgPurple img="/hackher/hackher_handbook.png" />
-              <div className="flex flex-col">
-                <p className="text-secondary-text text-[18px] font-black">
-                  We are so excited to have you participate in HackHer! Click
-                  here to view the handbook for an all-in-one guide covering the
-                  schedule of events, navigation of Queen's Campus, prize
-                  categories, judging criteria and more!
-                </p>
-                <div className="flex items-center gap-5 mt-4">
-                  <FontAwesomeIcon className="size-10" icon={faCalendarDays} />
+            <section className="mt-14 mb-20 flex flex-col-reverse md:flex-row gap-y-10 md:gap-x-72 md:gap-y-0 items-center">
+              <CardImgPurple
+                img="/hackher/hackher_handbook.png"
+                className="w-full max-w-sm md:max-w-md"
+              />
+              <div className="flex flex-col text-left">
+                <div className="flex items-center gap-4 mt-4 justify-start">
+                  <FontAwesomeIcon
+                    className="size-8 md:size-10"
+                    icon={faCalendarDays}
+                  />
                   <p className="text-secondary-text text-[18px] font-black">
                     March 8th - March 9th, 2025
                   </p>
                 </div>
-                <div className="flex items-center gap-5 mt-4">
-                  <FontAwesomeIcon icon={faCalendarCheck} className="size-10" />
+                <div className="flex items-center gap-4 mt-4 justify-start">
+                  <FontAwesomeIcon
+                    icon={faCalendarCheck}
+                    className="size-8 md:size-10"
+                  />
                   <p className="text-secondary-text text-[18px] font-black">
-                    Applications open February 1st, 2025, close March 2nd 2025
+                    Applications open February 1st, 2025, close March 2nd, 2025
                   </p>
                 </div>
+                <p className="text-secondary-text text-[18px] font-black mt-4">
+                  We are so excited to have you participate in HackHer! Click
+                  here to view the handbook for an all-in-one guide covering the
+                  schedule of events, navigation of Queen's Campus, prize
+                  categories, judging criteria, and more!
+                </p>
               </div>
             </section>
           </Link>
