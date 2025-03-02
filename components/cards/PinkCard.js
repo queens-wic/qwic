@@ -29,7 +29,7 @@ const PinkCard = ({ title, desc, cta, link, img }) => {
             </p>
           </div>
         </div>
-        <Link href={link}>
+        <Link href={link} target="_blank" rel="noopener noreferrer">
           <div className="flex justify-between items-center gap-6 w-fit py-4 transition ease-in-out delay-100 hover:translate-x-2">
             <span className="text-[20px] font-semi-bold">{cta}</span>
             <Image

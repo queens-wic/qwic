@@ -10,6 +10,7 @@ import ButtonPink from "../events/button-pink";
 import PinkCard from "@/components/cards/PinkCard";
 import BlueCard from "@/components/cards/BlueCard";
 import PurpleCard from "@/components/cards/PurpleCard";
+import CardImgPurple from "@/components/cards/card-img-purple";
 
 const page = () => {
   return (
@@ -27,27 +28,37 @@ const page = () => {
             Projects will be judged across multiple categories by a panel of
             expert judges.
           </p>
-          <section className="mt-8 flex flex-col gap-y-2">
-            <ButtonPink
-              username={"Apply Now!"}
-              link={
-                "https://docs.google.com/forms/d/e/1FAIpQLSf_HAKRnhIi5ZgGeg_nuWXRpO_tB_ZkYmX-jsSWV_2AR08dzA/viewform"
-              }
-            />
-            <div className="flex items-center gap-5 mt-4">
-              <FontAwesomeIcon className="size-10" icon={faCalendarDays} />
-              <p className="text-secondary-text text-[18px] font-black">
-                March 8th - March 9th, 2025
-              </p>
-            </div>
-            <div className="flex items-center gap-5 mt-4">
-              <FontAwesomeIcon icon={faCalendarCheck} className="size-10" />
-              <p className="text-secondary-text text-[18px] font-black">
-                Applications open February 1st, 2025, close March 2nd 2025
-              </p>
-            </div>
-            <div className="flex items-center gap-5 mt-4"></div>
-          </section>
+
+          <Link
+            href="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <section className="mt-14 mb-20 flex flex-col items-center md:flex-row gap-x-64 w-2/3">
+              <CardImgPurple img="/hackher/hackher_handbook.png" />
+              <div className="flex flex-col">
+                <p className="text-secondary-text text-[18px] font-black">
+                  We are so excited to have you participate in HackHer! Click
+                  here to view the handbook for an all-in-one guide covering the
+                  schedule of events, navigation of Queen's Campus, prize
+                  categories, judging criteria and more!
+                </p>
+                <div className="flex items-center gap-5 mt-4">
+                  <FontAwesomeIcon className="size-10" icon={faCalendarDays} />
+                  <p className="text-secondary-text text-[18px] font-black">
+                    March 8th - March 9th, 2025
+                  </p>
+                </div>
+                <div className="flex items-center gap-5 mt-4">
+                  <FontAwesomeIcon icon={faCalendarCheck} className="size-10" />
+                  <p className="text-secondary-text text-[18px] font-black">
+                    Applications open February 1st, 2025, close March 2nd 2025
+                  </p>
+                </div>
+              </div>
+            </section>
+          </Link>
+
           <div className="mt-10 flex flex-col xl:h-[475px] xl:flex-row xl:gap-4 justify-center">
             <PinkCard
               title="Location"
