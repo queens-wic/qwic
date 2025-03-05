@@ -16,6 +16,9 @@ const Page = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-4xl mb-3 sm:mb-4 lg:mb-6 font-bold">
             Current Events
           </h2>
+          <p className="text-secondary-text text-[18px] mt-4">
+            Visit our LinkTree linked below to sign up for events!
+          </p>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
         </div>
@@ -52,6 +55,25 @@ const Page = () => {
               }
             />
             <EventBox
+              card={<CardImgBlue img="/events/hackher_prep.png" />}
+              date={"March 1st, 2025"}
+              name={"HackHer Prep Workshop"}
+              timeplace={"Jeffrey Hall, Room 128"}
+              info={
+                "Want to brush up on your technical skills, learn some new techniques, or start right at the beginning with starting a project? Join us for the hackHer 2025 Prep Workshop!"
+              }
+            />
+            <EventBox
+              card={<CardImgPurple img="/events/hackher_cafe.png" />}
+              date={"Feb 28th, 2025"}
+              name={"HackHer Team Building Cafe"}
+              timeplace={"CasLab, Goodwin Hall"}
+              info={
+                "Join us in the caslab for our cafe-themed pre-hackathon event! Find a team if you haven’t already, those who do have a team are also encouraged to come!"
+              }
+            />
+
+            <EventBox
               card={<CardImgPink img="/events/karaoke.png" />}
               date={"February 4th, 2025"}
               name={"QWIC x COMPSA Karaoke"}
@@ -61,7 +83,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgPink img="/events/fireside_chat.png" />}
+              card={<CardImgBlue img="/events/fireside_chat.png" />}
               date={"November 19th, 2024"}
               name={"Women at Microsoft Fireside Chat"}
               timeplace={"MacCorry D214, 12pm-1pm"}
@@ -70,7 +92,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgBlue img="/events/spinco_2024.jpeg" />}
+              card={<CardImgPurple img="/events/spinco_2024.jpeg" />}
               date={"November 9th, 2024"}
               name={"QWIC x SpinCo"}
               timeplace={"SpinCo Kingston, 3pm"}
@@ -79,7 +101,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgPurple img="/events/meet_mentors.png" />}
+              card={<CardImgPink img="/events/meet_mentors.png" />}
               date={"September 23rd, 2024"}
               name={"Meet the Mentors Game Night"}
               timeplace={"CasLab, 6-7:30pm"}
@@ -88,7 +110,7 @@ const Page = () => {
               }
             />
             <EventBox
-              card={<CardImgPurple img="/events/bracelet_making_event.png" />}
+              card={<CardImgBlue img="/events/bracelet_making_event.png" />}
               date={"September 15, 2024"}
               name={"Bracelet Making"}
               timeplace={"MacDonald Park, 12-2pm"}
