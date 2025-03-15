@@ -4,7 +4,7 @@ export default function ContactForm() {
   return (
     <form
       className="w-full"
-      action="https://getform.io/f/aolmonrb"
+      action="https://getform.io/f/ayvkwpkb"
       method="POST"
     >
       <div className="flex gap-4">
