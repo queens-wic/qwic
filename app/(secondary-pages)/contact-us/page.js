@@ -4,7 +4,7 @@ export default function ContactUs() {
   return (
     <div>
       {/* Heading */}
-      <div className="flex justify-center items-center pt-10 mx-36 py-10">
+      <div className="flex justify-center items-center pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
         <div className="relative">
           <h1 className="text-[36px] font-bold">Contact Us</h1>
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
@@ -21,7 +21,7 @@ export default function ContactUs() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center pt-10 mx-36 py-20">
+      <div className="flex justify-center items-center py-20 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
         <ContactForm />
       </div>
     </div>
