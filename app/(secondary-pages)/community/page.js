@@ -20,7 +20,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="mx-4 sm:mx-8 md:mx-16 pt-10 lg:mx-36">
+      <div className="mx-4 my-20 sm:mx-8 md:mx-16 pt-10 lg:mx-36">
         <CarouselSlider />
       </div>
     </div>
