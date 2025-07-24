@@ -1,5 +1,7 @@
 import React from "react";
 import Wip from "@/components/Wip";
+import Gallery from "@/components/gallery";
+import PhotoGrid from '@/components/PhotoGrid';
 
 const page = () => {
   return (
@@ -20,7 +22,10 @@ const page = () => {
           </p>
         </div>
       </div>
-      <Wip />
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-3xl font-bold text-center mt-10 mb-4">QWIC Gallery</h1>
+        <PhotoGrid />
+      </div>
     </div>
   );
 };
