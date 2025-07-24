@@ -113,6 +113,15 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  href="/qwic_chat"
+                  className="hover:text-dark-purple text-xl py-4"
+                  onClick={() => setIsNavOpen(!isNavOpen)}
+                >
+                  QWIC Chat
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/our-team"
                   className="hover:text-dark-purple text-xl py-4"
                   onClick={() => setIsNavOpen(!isNavOpen)}
@@ -167,6 +176,11 @@ const Navbar = () => {
             <li>
               <Link href="/mentorship" className="hover:text-dark-purple">
                 Mentorship
+              </Link>
+            </li>
+            <li>
+              <Link href="/qwic_chat" className="hover:text-dark-purple">
+                QWIC Chat
               </Link>
             </li>
             <li>

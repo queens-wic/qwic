@@ -1,28 +1,10 @@
 "use client";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import Slider from "../../../components/Slider";
+import Image from "next/image";
+import CardShadowPurple from "@/components/cards/card-shadow-purple";
+import EpisodeBox from "./episode-box.js";
+import Slider from "@/components/Slider"; // Make sure the path is correct
 import { SwiperSlide } from "swiper/react";
-
-const podcastEpisodes = [
-  {
-    title: "Wendy Powley on Bringing More Women into Tech",
-    description:
-      "Wendy Powley, founder of QWIC, sits down with us to talk about the work she's done, her drive and motivation for doing so, what she's learned along the way, and the role of schools in continuing this work.",
-    speakers: ["Wendy Powley"],
-    image: "/qwic_chat/WendyPowley_qwic_chat.jpg",
-    spotify: "#",
-  },
-  {
-    title:
-      "Navigating the Industry Post Grad with QWIC Alumni Maya Steckly and Anna Wood",
-    description:
-      "Maya Steckly and Anna Wood, former Queens and QWIC alumni, join us to talk about transitioning into the tech industry, a shared love for QWIC, and finding community wherever you go.",
-    speakers: ["Maya Steckly", "Anna Wood"],
-    image: "/qwic_chat/AnnaMaya_qwic_chat.jpg",
-    spotify: "#",
-  },
-];
 
 const guestSpeakers = [
   {
@@ -52,70 +34,57 @@ const useIsMobile = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return isMobile;
 };
 
-export default function QwicChatPage() {
+const PodcastPage = () => {
   const isMobile = useIsMobile();
+
   return (
-    <main className="min-h-screen bg-[#F9F7FC] px-6 md:px-32 py-12 md:py-16">
-      <h1 className="text-4xl md:text-5xl font-bold mb-12">QWIC Chat</h1>
-      <div className="flex flex-col gap-12">
-        {/* Podcast Episodes */}
-        {podcastEpisodes.map((ep, idx) => (
-          <div key={idx} className="flex flex-col md:flex-row gap-8 items-start">
-            <div className="w-full md:w-[260px] flex-shrink-0">
-              <Image
-                src={ep.image}
-                alt={ep.title}
-                width={260}
-                height={260}
-                className="rounded-2xl shadow-lg border-2 border-[#E0A4D7] w-full h-auto"
-              />
-            </div>
-            <div className="flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-2">{ep.title}</h2>
-              <p className="mb-2 text-lg max-w-2xl">{ep.description}</p>
-              <div className="mb-4 font-semibold">
-                Guest Speakers: {ep.speakers.join(", ")}
-              </div>
-              <a
-                href="https://open.spotify.com/show/1tdnajoqkzev8apbxHlrkN?si=df813aec93fb4423"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4"
-              >
-                <Image
-                  src="/qwic_chat/spotify button3.png"
-                  alt="Listen on Spotify"
-                  width={300}
-                  height={84}
-                  className="hover:scale-105 transition"
-                />
-              </a>
-            </div>
-          </div>
-        ))}
+    <div className="pt-10 mx-4 sm:mx-8 md:mx-16 lg:mx-36">
+      <div className="relative">
+        <h2 className="text-3xl md:text-4xl mb-6 sm:mb-10 lg:mb-6 font-bold">
+          QWIC Chat
+        </h2>
       </div>
-      <div className="mt-12 text-xl font-semibold">
+
+      <div className="flex flex-col gap-12 mt-2">
+        <EpisodeBox
+          title="Wendy Powley on Bringing More Women into Tech"
+          description="Wendy Powley, founder of QWIC, sits down with us to talk about the work she’s done, her drive and motivation for doing do, what she’s learned along the way, and the role of schools in continuing this work"
+          guests={["Wendy Powley"]}
+          imgSrc="/qwic_chat/wendy.png"
+          spotifyButtonImg="/qwic_chat/spotify-button.png"
+          spotifyUrl="https://open.spotify.com/episode/0TBAuOipyxTI4tBAnKWqjl"
+          CardComponent={CardShadowPurple}
+        />
+
+        <EpisodeBox
+          title="Navigating the Industry Post Grad with QWIC Alumni Maya Steckly and Anna Wood"
+          description="Maya Steckly and Anna Wood, former Queens and QWIC alumni, join us to talk about transitioning into the tech industry, a shared love for QWIC and finding community."
+          guests={["Maya Steckly", "Anna Wood"]}
+          imgSrc="/qwic_chat/anna-maya.png"
+          spotifyButtonImg="/qwic_chat/spotify-button.png"
+          spotifyUrl="https://open.spotify.com/episode/2utLBxzbylIW3kALEcx6DS"
+          CardComponent={CardShadowPurple}
+        />
+      </div>
+
+      <p className="py-8 md:py-16 md:text-[18px] text-[14px]">
         More episodes coming soon!
-      </div>
-      {/* Guest Speakers */}
-      <div className="mt-20">
+      </p>
+
+      {/* 🎙 Guest Speakers Section */}
+      <div className=" md:mt-200">
         <h2 className="text-3xl font-bold mb-8 text-center">
           Check out some of our past podcasts and guest speakers!
         </h2>
         <div className="max-w-xs md:max-w-5xl mx-auto">
-          {/* Mobile View & Smaller Screens */}
           <Slider isMobile={isMobile}>
             {guestSpeakers.map((speaker, idx) => (
               <SwiperSlide key={idx}>
@@ -141,6 +110,10 @@ export default function QwicChatPage() {
           </Slider>
         </div>
       </div>
-    </main>
+
+      <div className="h-40"></div>
+    </div>
   );
-} 
+};
+
+export default PodcastPage;
