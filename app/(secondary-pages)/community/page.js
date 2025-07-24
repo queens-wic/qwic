@@ -1,6 +1,4 @@
 import React from "react";
-import Wip from "@/components/Wip";
-import Gallery from "@/components/gallery";
 import PhotoGrid from '@/components/PhotoGrid';
 
 const page = () => {
