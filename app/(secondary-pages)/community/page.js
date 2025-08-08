@@ -1,5 +1,6 @@
 import React from "react";
 import PhotoGrid from '@/components/PhotoGrid';
+import GalleryTabs from "./GalleryTabs";
 
 const page = () => {
   return (
@@ -22,7 +23,7 @@ const page = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-center mt-10 mb-4">QWIC Gallery</h1>
-        <PhotoGrid />
+        <GalleryTabs />
       </div>
     </div>
   );
