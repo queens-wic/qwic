@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import CardShadowPurple from "@/components/cards/card-shadow-purple";
 import EpisodeBox from "./episode-box.js";
-import Slider from "@/components/Slider"; // Make sure the path is correct
+import Slider from "../../../components/Slider";
 import { SwiperSlide } from "swiper/react";
 
 const guestSpeakers = [
