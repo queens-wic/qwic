@@ -126,6 +126,15 @@ info: "Kick the year off by joining us at MacDonald Park from 1-3pm for some bra
 img: "/events/braceletmaking.jpg",
 cardColor: "purple",
 },
+{
+id: 14,
+date: "2025-09-25",
+name: "Beading In The Park",
+timeplace: "Macdonald Park",
+info: "Join QWIC for our first event of the school year!   Get the chance to meet the community with board games and bracelets!",
+img: "/events/beadinginthepark.png",
+cardColor: "purple",
+},
 ];
 
 export default events;

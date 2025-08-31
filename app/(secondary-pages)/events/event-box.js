@@ -6,9 +6,9 @@ import React from "react";
 const EventBox = ({ card, date, endDate, timeplace, name, info }) => (
   <div className="flex flex-col items-start w-1/3">
     <div>
-      <p className="mb-3 mt-10 text-[18px] text-secondary-text font-semibold">
+      <p className="mb-3 mt-10 text-[17px] text-secondary-text font-semibold">
         {date}
-        {endDate && ` - ${endDate}`} {/* Only shows if endDate exists */}
+        {endDate && ` - ${endDate}`} 
       </p>
       <div className="mb-10">{card}</div>
       <h3 className="text-xl sm:text-2xl lg:text-2xl mb-1 sm:mb-1 lg:mb-1">
