@@ -4,15 +4,15 @@ import { useState } from "react";
 
 const gallery2024 = [
   "/gallery/spinco.jpeg",
-  "/gallery/hackher2.jpg",
+  "/gallery/hackher2.jpeg",
   "/gallery/hackher.jpeg",
-  "/gallery/oweekbooth.jpg",
-  "/gallery/hackher3.jpg",
-  "/gallery/formal.jpg",
-  "/gallery/hackher4.jpg",
+  "/gallery/oweekbooth.jpeg",
+  "/gallery/hackher3.jpeg",
+  "/gallery/formal.jpeg",
+  "/gallery/hackher4.jpeg",
   "/gallery/braceletmaking.jpg",
   "/gallery/hackher5.jpeg",
-  "/gallery/oweek2.jpg",
+  "/gallery/oweek2.jpeg",
   "/gallery/hackher6.png",
   "/gallery/hackher.jpeg",
 ];
