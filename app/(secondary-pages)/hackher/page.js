@@ -22,8 +22,8 @@ const page = () => {
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
           <p className="text-secondary-text text-[18px] mt-4">
-            HackHer 2025 is a 24-hour coding sprint, running from 10am on March
-            8th to 10am on March 9th. Participants can compete solo or in teams
+            HackHer 2025 is a 24-hour coding sprint, running from 10am on February
+            28th to 10am on March 1st. Participants can compete solo or in teams
             to create projects that meet specific challenge requirements.
             Projects will be judged across multiple categories by a panel of
             expert judges.
@@ -36,7 +36,7 @@ const page = () => {
           >
             <section className="mt-14 mb-20 flex flex-col-reverse md:flex-row gap-y-10 md:gap-x-72 md:gap-y-0 items-center">
               <CardImgPurple
-                img="/hackher/hackher_handbook.png"
+                img="/hackher/HackHer Signup.png"
                 className="w-full max-w-sm md:max-w-md"
               />
               <div className="flex flex-col text-left">
@@ -46,7 +46,7 @@ const page = () => {
                     icon={faCalendarDays}
                   />
                   <p className="text-secondary-text text-[18px] font-black">
-                    March 8th - March 9th, 2025
+                    February 28th - March 1st, 2025
                   </p>
                 </div>
                 <div className="flex items-center gap-4 mt-4 justify-start">
@@ -55,7 +55,7 @@ const page = () => {
                     className="size-8 md:size-10"
                   />
                   <p className="text-secondary-text text-[18px] font-black">
-                    Applications open February 1st, 2025, close March 2nd, 2025
+                    Applications open January 30th, 2025, close February 17th, 2025
                   </p>
                 </div>
                 <p className="text-secondary-text text-[18px] font-black mt-4">
