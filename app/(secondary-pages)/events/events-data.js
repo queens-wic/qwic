@@ -1,5 +1,6 @@
 
 const events = [
+
 {
 id: 1,
 date: "2025-03-08",
@@ -151,8 +152,35 @@ name: "Resume Workshop",
 timeplace: "Goodwin Hall CasLab, 7pm",
 info: "Join us on November 5 at 7 PM in the CasLab in Goodwin Hall for our Resume Workshop! We’ll walk you through how to craft a strong, professional resume from the ground up!",
 img: "/events/resume.png",
-cardColor: "pink",
+cardColor: "purple",
 },
+{
+id: 18,
+date: "2026-01-13",
+name: "QWIC x QUX Vision Board Night",
+timeplace: "Goodes Room 302, Free",
+info: "Join QWIC and QUX for a creative evening where you'll learn the basics of Figma while designing your own personalized vision board for 2026! Perfect for beginners - no design experience needed. Bring your goals, dreams, and creativity!",
+img: "/events/qux x qwic - vision board.png",
+cardColor: "blue",
+},
+{
+id: 19,
+date: "2026-02-11",
+name: "Pitch Your Friend",
+timeplace: "Daft Brewing - 10pm",
+info: "Come pitch your single friends in front of a crowd, watch everyone mingle, and see what happens. Join us February 11th at 10PM at Daft Brewing!",
+img: "/events/pitch your friend!.png",
+cardColor: "purple",
+},
+{
+id: 20,
+date: "2025-12-08",
+name: "QWIC x Ericsson Info Session",
+timeplace: "Goodes Room 118",
+info: "Join us for an information session with Ericsson to learn about career opportunities, company culture and their innovative work in telecommunications and technology.",
+img: "/events/QWIC X ERICSSON Info Session.png",
+cardColor: "pink",
+}
 ];
 
 export default events;
