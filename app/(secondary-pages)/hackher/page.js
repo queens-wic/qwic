@@ -46,7 +46,7 @@ const page = () => {
                     icon={faCalendarDays}
                   />
                   <p className="text-secondary-text text-[18px] font-black">
-                    February 28th - March 1st, 2025
+                    February 28th - March 1st, 2026
                   </p>
                 </div>
                 <div className="flex items-center gap-4 mt-4 justify-start">
@@ -55,7 +55,7 @@ const page = () => {
                     className="size-8 md:size-10"
                   />
                   <p className="text-secondary-text text-[18px] font-black">
-                    Applications open January 30th, 2025, close February 17th, 2025
+                    Applications open January 30th, 2026, close February 17th, 2026
                   </p>
                 </div>
                 <p className="text-secondary-text text-[18px] font-black mt-4">
