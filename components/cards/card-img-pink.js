@@ -16,7 +16,7 @@ const CardImgPink = ({ img }) => {
           style={isShweta ? { objectPosition: "center 50%" } : {}}
         />
       </div>
-      <div className="absolute top-5 left-0 z-30 w-[300px] h-[300px] rounded-2xl bg-light-pink"></div>
+      <div className="absolute top-5 left-0 z-30 w-[300px] h-[300px] rounded-2xl bg-dark-purple"></div>
     </div>
   );
 };
