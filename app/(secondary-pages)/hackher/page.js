@@ -11,6 +11,7 @@ import PinkCard from "@/components/cards/PinkCard";
 import BlueCard from "@/components/cards/BlueCard";
 import PurpleCard from "@/components/cards/PurpleCard";
 import CardImgPurple from "@/components/cards/card-img-purple";
+import ButtonPurple from "../events/button-purple";
 
 const page = () => {
   return (
@@ -22,7 +23,7 @@ const page = () => {
           <div className="z-10 absolute top-0 -left-10 w-44 h-44  bg-light-pink rounded-full mix-blend-multiply filter blur-2xl opacity-95 animate-blob"></div>
           <div className="z-10 absolute right-10 w-44 h-44  bg-light-purple rounded-full filter mix-blend-multiply blur-2xl opacity-95 animate-blob animation-delay-4000"></div>
           <p className="text-secondary-text text-[18px] mt-4">
-            HackHer 2025 is a 24-hour coding sprint, running from 10am on February
+            HackHer 2026 is a 24-hour coding sprint, running from 10am on February
             28th to 10am on March 1st. Participants can compete solo or in teams
             to create projects that meet specific challenge requirements.
             Projects will be judged across multiple categories by a panel of
@@ -46,7 +47,7 @@ const page = () => {
                     icon={faCalendarDays}
                   />
                   <p className="text-secondary-text text-[18px] font-black">
-                    February 28th - March 1st, 2025
+                    February 28th - March 1st, 2026
                   </p>
                 </div>
                 <div className="flex items-center gap-4 mt-4 justify-start">
@@ -55,18 +56,22 @@ const page = () => {
                     className="size-8 md:size-10"
                   />
                   <p className="text-secondary-text text-[18px] font-black">
-                    Applications open January 30th, 2025, close February 17th, 2025
+                    Applications open January 30th, 2026, close February 17th, 2026
                   </p>
                 </div>
                 <p className="text-secondary-text text-[18px] font-black mt-4">
-                  We are so excited to have you participate in HackHer! Click
-                  here to view the handbook for an all-in-one guide covering the
-                  schedule of events, navigation of Queen's Campus, prize
-                  categories, judging criteria, and more!
-                </p>
-              </div>
-            </section>
-          </Link>
+                    We are so excited to have you participate in HackHer! Click
+                    here to view the handbook for an all-in-one guide covering the
+                    schedule of events, navigation of Queen's Campus, prize
+                    categories, judging criteria, and more!
+                  </p>
+                  <ButtonPurple
+                    username="Sign Up Now"
+                    link="https://docs.google.com/forms/d/e/1FAIpQLSe-U06-KuxAq6Ow3J1sAb5UX4YD5PW1To-qPlKSIrHBRbSUvA/viewform"
+                  />
+                    </div>
+                  </section>
+                </Link>
 
           <div className="mt-10 flex flex-col xl:h-[475px] xl:flex-row xl:gap-4 justify-center">
             <PinkCard
