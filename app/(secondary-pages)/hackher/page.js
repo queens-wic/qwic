@@ -30,7 +30,7 @@ const page = () => {
             expert judges.
           </p>
 
-          <section className="mt-14 mb-20 flex flex-col-reverse md:flex-row gap-y-10 md:gap-x-72 md:gap-y-0 items-center">
+          <section className="mt-14 mb-20 flex flex-col-reverse md:flex-row gap-y-10 md:gap-x-16 lg:gap-x-24 md:gap-y-0 items-center">
             <CardImgPurple
               img="/hackher/HackHer Signup.png"
               className="w-full max-w-sm md:max-w-md"
@@ -87,28 +87,8 @@ const page = () => {
               img={"/hackher/guestSpeaker.png"}
             />
           </div>
-          <div className="my-20">
-            <h1 className="text-[36px] font-bold">HackHer Prep Workshop</h1>
-            <p className="text-secondary-text text-[18px] font-black">
-              New to hackathons or want to sharpen your skills? Join us, QWeb,
-              and QTMA for a prep workshop on March 1st! We will cover:
-            </p>
-            <ul className=" list-disc mt-2 ms-4 space-y-1 text-secondary-text text-[18px] font-black">
-              <li>Intro to Git, HTML & CSS with QWIC</li>
-              <li>Learn React.js and how to set up a backend with QWEB</li>
-              <li>
-                Polish off your project with an amazing demo and presentation
-                with QTMA
-              </li>
-            </ul>
-            <Link
-              href="/events"
-              className="text-secondary-text text-[18px] underline font-black flex items-center gap-1 mt-2 hover:text-primary"
-            >
-              Find out more details on our events page
-            </Link>
-          </div>
-          <div className="self-center p-2">
+       
+          <div className="self-center p-2 mt-20">
             {/* For medium screens and larger */}
             <div className="hidden xl:block">
               <Image
