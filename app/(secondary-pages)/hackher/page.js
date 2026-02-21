@@ -29,7 +29,11 @@ const page = () => {
             Projects will be judged across multiple categories by a panel of
             expert judges.
           </p>
-
+          <Link
+            href="https://drive.google.com/file/d/1BFScRTr0QUyVb25yiosEDSmqojbTYBTB/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <section className="mt-14 mb-20 flex flex-col-reverse md:flex-row gap-y-10 md:gap-x-16 lg:gap-x-24 md:gap-y-0 items-center">
             <CardImgPurple
               img="/hackher/HackHer Signup.png"
@@ -63,27 +67,28 @@ const page = () => {
               />
             </div>
           </section>
+          </Link>
 
           <div className="mt-10 flex flex-col xl:h-[475px] xl:flex-row xl:gap-4 justify-center">
             <PinkCard
               title="Location"
               desc="Code with us in person at Queen’s University for food, workshops, presentations, games, and more! Prizes await the winners. Can’t make it in person? No worries— participate online."
               cta="More"
-              link="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
+              link="https://drive.google.com/file/d/1BFScRTr0QUyVb25yiosEDSmqojbTYBTB/view?usp=sharing"
               img={"/hackher/location.png"}
             />
             <BlueCard
               title="Beginner Friendly"
               desc="No coding experience required! This is a great opportunity to learn, collaborate, and network with students, professors, and industry professionals."
               cta="More"
-              link="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
+              link="https://drive.google.com/file/d/1BFScRTr0QUyVb25yiosEDSmqojbTYBTB/view?usp=sharing"
               img={"/hackher/beginnerFriendly.png"}
             />
             <PurpleCard
               title="Guest Speakers"
-              desc="Industry leaders from Amazon, Microsoft, Ericsson, Intermap, Incognito, and Datadog will share their expertise."
+              desc="Industry leaders from Amazon, Microsoft, Tesla, PolyAI and Validere will share their expertise."
               cta="More"
-              link="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
+              link="https://drive.google.com/file/d/1BFScRTr0QUyVb25yiosEDSmqojbTYBTB/view?usp=sharing"
               img={"/hackher/guestSpeaker.png"}
             />
           </div>
