@@ -30,48 +30,39 @@ const page = () => {
             expert judges.
           </p>
 
-          <Link
-            href="https://drive.google.com/file/d/1WOdImcnp9R3tztq2QCxS1evUQWA14c1T/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <section className="mt-14 mb-20 flex flex-col-reverse md:flex-row gap-y-10 md:gap-x-72 md:gap-y-0 items-center">
-              <CardImgPurple
-                img="/hackher/HackHer Signup.png"
-                className="w-full max-w-sm md:max-w-md"
+          <section className="mt-14 mb-20 flex flex-col-reverse md:flex-row gap-y-10 md:gap-x-72 md:gap-y-0 items-center">
+            <CardImgPurple
+              img="/hackher/HackHer Signup.png"
+              className="w-full max-w-sm md:max-w-md"
+            />
+            <div className="flex flex-col text-left">
+              <div className="flex items-center gap-4 mt-4 justify-start">
+                <FontAwesomeIcon
+                  className="size-8 md:size-10"
+                  icon={faCalendarDays}
+                />
+                <p className="text-secondary-text text-[18px] font-black">
+                  February 28th - March 1st, 2026
+                </p>
+              </div>
+              <div className="flex items-center gap-4 mt-4 justify-start">
+                <FontAwesomeIcon
+                  icon={faCalendarCheck}
+                  className="size-8 md:size-10"
+                />
+                <p className="text-secondary-text text-[18px] font-black">
+                  Applications open January 30th, 2026, close February 17th, 2026
+                </p>
+              </div>
+              <p className="text-secondary-text text-[18px] font-black mt-4">
+                We are so excited to have you participate in HackHer!
+              </p>
+              <ButtonPurple
+                username="Sign Up Now"
+                link="https://docs.google.com/forms/d/e/1FAIpQLSe-U06-KuxAq6Ow3J1sAb5UX4YD5PW1To-qPlKSIrHBRbSUvA/viewform"
               />
-              <div className="flex flex-col text-left">
-                <div className="flex items-center gap-4 mt-4 justify-start">
-                  <FontAwesomeIcon
-                    className="size-8 md:size-10"
-                    icon={faCalendarDays}
-                  />
-                  <p className="text-secondary-text text-[18px] font-black">
-                    February 28th - March 1st, 2026
-                  </p>
-                </div>
-                <div className="flex items-center gap-4 mt-4 justify-start">
-                  <FontAwesomeIcon
-                    icon={faCalendarCheck}
-                    className="size-8 md:size-10"
-                  />
-                  <p className="text-secondary-text text-[18px] font-black">
-                    Applications open January 30th, 2026, close February 17th, 2026
-                  </p>
-                </div>
-                <p className="text-secondary-text text-[18px] font-black mt-4">
-                    We are so excited to have you participate in HackHer! Click
-                    here to view the handbook for an all-in-one guide covering the
-                    schedule of events, navigation of Queen's Campus, prize
-                    categories, judging criteria, and more!
-                  </p>
-                  <ButtonPurple
-                    username="Sign Up Now"
-                    link="https://docs.google.com/forms/d/e/1FAIpQLSe-U06-KuxAq6Ow3J1sAb5UX4YD5PW1To-qPlKSIrHBRbSUvA/viewform"
-                  />
-                    </div>
-                  </section>
-                </Link>
+            </div>
+          </section>
 
           <div className="mt-10 flex flex-col xl:h-[475px] xl:flex-row xl:gap-4 justify-center">
             <PinkCard
