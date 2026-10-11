@@ -19,7 +19,20 @@ const gallery2024 = [
   "/gallery/hackher.jpeg",
 ];
 
-const gallery2025 = []; // Coming soon
+const gallery2025 = [
+  "/gallery/25-26/community/fullTeam.jpg",
+  "/gallery/25-26/community/braceletMaking.png",
+  "/gallery/25-26/community/braceletMaking2.png",
+  "/gallery/25-26/community/casLabCrafts.jpg",
+  "/gallery/25-26/community/funPic.jpg",
+  "/gallery/25-26/community/githubEvent.jpg",
+  "/gallery/25-26/community/someOfTheTeam.jpg",
+  "/gallery/25-26/community/pitchYourFriend.jpg",
+  "/gallery/25-26/community/pitchYourFriend2.jpg",
+  "/gallery/25-26/community/pumpkinsWPeople.jpg",
+  "/gallery/25-26/community/pumpkins.jpg",
+  "/gallery/25-26/community/fullTeamProfessional.jpg"
+];
 
 const GalleryTabs = () => {
   const renderGallery = (images) => (
@@ -49,7 +62,7 @@ const GalleryTabs = () => {
         </TabPanel>
 
         <TabPanel>
-          <div className="text-center text-gray-400 mt-10">Gallery coming soon...</div>
+          {renderGallery(gallery2025)}
         </TabPanel>
       </Tabs>
     </div>
