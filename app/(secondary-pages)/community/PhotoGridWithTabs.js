@@ -17,7 +17,20 @@ const gallery2024 = [
   "/gallery/hackher.jpeg",
 ];
 
-const gallery2025 = []; // Empty for now
+const gallery2025 = [
+  "/gallery/25-26/community/fullTeam.jpg",
+  "/gallery/25-26/community/braceletMaking.png",
+  "/gallery/25-26/community/braceletMaking2.png",
+  "/gallery/25-26/community/casLabCrafts.jpg",
+  "/gallery/25-26/community/funPic.jpg",
+  "/gallery/25-26/community/githubEvent.jpg",
+  "/gallery/25-26/community/someOfTheTeam.jpg",
+  "/gallery/25-26/community/pitchYourFriend.jpg",
+  "/gallery/25-26/community/pitchYourFriend2.jpg",
+  "/gallery/25-26/community/pumpkinsWPeople.jpg",
+  "/gallery/25-26/community/pumpkins.jpg",
+  "/gallery/25-26/community/fullTeamProfessional.jpg"
+]; //filled october 2026
 
 const PhotoGridWithTabs = () => {
   const [activeTab, setActiveTab] = useState("2024");
@@ -62,9 +75,7 @@ const PhotoGridWithTabs = () => {
       {/* Gallery content */}
       {activeTab === "2024" && renderGallery(gallery2024)}
 
-      {activeTab === "2025" && (
-        <div className="text-center text-gray-400 mt-10">Gallery coming soon...</div>
-      )}
+      {activeTab === "2025" && renderGallery(gallery2025)}
     </div>
   );
 };
